@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import HoroscopesDailyPage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/pages/astrology_pages/horoscopesDaily.js';
-import Homepage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/pages/astrology_pages/homepage.js';
+import HoroscopesDailyPage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/pages/astrology_pages/horoscopesDaily.js';
+import Homepage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/pages/astrology_pages/homepage.js';
 
 
 describe('dailyHoroyNav', function() {

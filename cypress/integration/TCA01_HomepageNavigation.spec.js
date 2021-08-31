@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Homepage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/pages/astrology_pages/homepage.js';
+import Homepage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/pages/astrology_pages/homepage.js';
 
 
 describe('astroHomepageNav', function() {

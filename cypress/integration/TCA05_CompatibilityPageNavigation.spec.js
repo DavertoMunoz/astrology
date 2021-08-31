@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import CompatibilityPage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/pages/astrology_pages/compatibilityPage.js';
+import CompatibilityPage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/pages/astrology_pages/compatibilityPage.js';
 
 describe('Confirm Compatibility Page Navigation', function() {
     const compatibilityPage = new CompatibilityPage();

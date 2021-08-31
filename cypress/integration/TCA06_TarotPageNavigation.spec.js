@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import TarotPage from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/pages/astrology_pages/tarotPage.js";
+import TarotPage from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/pages/astrology_pages/tarotPage.js";
 import tarotPage_locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/tarotPage_locators.js";
 
 // TAROT PAGE COMPLETED

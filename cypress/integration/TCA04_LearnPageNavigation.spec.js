@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import LearnHomePage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/pages/astrology_pages/learnPage.js'; 
+import LearnHomePage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/pages/astrology_pages/learnPage.js'; 
 
 describe('Confirm Learn Page loading styles', function() {
     const learnhomepage=new LearnHomePage();
