@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import compatibilityPage_locators from "/Users/dmunoz/Documents/Testing_Projects/Cypress/Astrology.com/cypress/support/compatibilityPage_locators.js";
+import compatibilityPage_locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/compatibilityPage_locators.js";
 import learnPage_locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/learnPage_locators.js";
 import tarotPage_locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/tarotPage_locators.js";
 
