@@ -29,6 +29,7 @@ verifySignPickerWidget() {
 
 confirmTheSkyThisWeek() {
     cy.get(shared_locators.theSkyTitle).should('be.visible');
+    cy.get(shared_locators.theSkyTitle).should('contain.text', 'Week');
     cy.get(shared_locators.firstContentBody).should('be.visible');
     cy.contains('Continue Reading').click();
     cy.url().should('include', '/weekly-horoscope');

@@ -82,6 +82,16 @@ export default {
     cardLove: '.card--love',
     cardWork: '.card--work',
     cardDating: '.card--dating',
+
+    // Carousel tempo card titles
+    cardDailyTitle: '.card--daily .card__title',
+    cardWeeklyTitle: '.card--weekly .card__title',    
+    cardMonthlyTitle: '.card--love .card__title',
+    cardYearlyTitle: '.card--yearly .card__title',
+    cardChineseTitle: '.card--chinese .card__title',
+    cardLoveTitle: '.card--love .card__title',
+    cardWorkTitle: '.card--work .card__title',
+    cardDatingTitle: '.card--dating .card__title',
     
 
     cardDailyReadMore: '.card--daily .card__cta',
@@ -101,7 +111,21 @@ export default {
     datingHeaderLinkList: '.dating > .column__header',
     datingLinkList: '.love > .links',
 
+    // Reccomended reports carousel
+    // // Recommended reports images - STORE section
+    firstSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(1)',
+    secondSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(2)', 
+    thirdSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(3)', 
+    fourthSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(4)', 
+    fifthSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(5)', 
+    sixthSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(6)', 
 
+    firstSliderLink: ".mt-1 div:nth-of-type(1) > .card",
+    secondSliderLink: ".mt-1 div:nth-of-type(2) > .card",
+    thirdSliderLink: ".mt-1 div:nth-of-type(3) > .card",
+    fourthSliderLink: ".mt-1 div:nth-of-type(4) > .card",
+    fifthSliderLink: ".mt-1 div:nth-of-type(5) > .card",
+    sixthSliderLink: ".mt-1 div:nth-of-type(6) > .card",
     // Ad banner bottom
     adBottomBanner: '#d_banner_t_banner_m_none_1'
 }
