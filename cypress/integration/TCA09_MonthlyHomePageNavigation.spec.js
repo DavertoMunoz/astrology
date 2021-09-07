@@ -20,7 +20,7 @@ it('Confirm monthly paragraphs content are visible', function() {
     monthlyHomePage.confirmTheSkyThisMonth();
 })
 
-it.only('Confirm extra elments, reports and Link list', function() {
+it('Confirm extra elments, reports and Link list', function() {
     monthlyHomePage.verifyReportsImagesandLinksList();
 })
 
