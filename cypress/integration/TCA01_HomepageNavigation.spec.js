@@ -25,7 +25,7 @@ it('Confirm all images from Horoscope section are visible', () => {
 
 })
 
-it('verify Horoscope section images', () =>  {
+it.only('verify Horoscope section images', () =>  {
     homepage.horoscopeImagesIcons()
 
 })
@@ -44,7 +44,7 @@ it('verify Shop section elements', () => {
 
 })
 
-it.only('verify Compatibility section elements', () => {
+it('verify Compatibility section elements', () => {
     homepage.confirmCompatibilitySectionElements()
 
 })
