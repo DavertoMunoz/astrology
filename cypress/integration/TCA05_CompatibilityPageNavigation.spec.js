@@ -25,7 +25,5 @@ it('Recommended Reports Slider', function() {
     compatibilityPage.RecommendedReportsSlides();
 })
 
-
-
 })
 

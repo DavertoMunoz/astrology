@@ -74,7 +74,7 @@ cy.get(homepage_locators.datingImage).should('be.visible')
 
 horoscopeImagesIcons() {
 cy.scrollTo(0, 300);
-cy.get("[alt='july Horoscopes']").should('be.visible');
+cy.get(homepage_locators.homePremiumMonthlyImage).should('be.visible');
 cy.get("[alt='Chinese Zodiac Horoscopes']").should('be.visible');
 cy.get("[alt='2021 Yearly Horoscopes']").should('be.visible');
 cy.get('.icon-widget-love').should('be.visible');
@@ -153,6 +153,10 @@ cy.scrollTo(0, 3000) // Scroll to shop section
 
 // Verify that the images are visible
 cy.get(homepage_locators.homePremiumMonthlyImage).should('be.visible')
+cy.get(homepage_locators.homePremiumMonthlyImage).click()
+cy.get('.product_title').should('contain.text', 'September Horoscope');
+//cy.get('.page-title').should('not.contain.text', "Oops! That page can’t be found.");
+cy.go('back');
 cy.get(homepage_locators.homeBcImage).should('be.visible')
 cy.get(homepage_locators.homeLoveCompImage).should('be.visible')
 cy.get(homepage_locators.homeYearImage).should('be.visible')
@@ -162,7 +166,7 @@ cy.get(homepage_locators.homeNumerologyImage).should('be.visible')
 // Links and page confirmation
 // Shop Monthly Page Description
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get(homepage_locators.monthlyDescription).should('contain.text', 'Featuring the natal planets mostly in water and fire signs, the astrology forecast for July is full of emotions, drive—and of course, a little bit of drama. While the sun and Mercury will be in Cancer, Venus and Mars will be in Leo.')
+cy.get(homepage_locators.monthlyDescription).should('contain.text', 'We begin the month under the sun in Virgo, helping us fine-tune our many different routines so our lives can work at their best. Four planets are also retrograde, bringing a slower pace of life and allowing us to, little by little, catch our breath.')
 cy.go('back')
 cy.wait(300)
 

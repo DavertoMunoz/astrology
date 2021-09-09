@@ -3,6 +3,13 @@
 
 export default {
 
+    // Shop - product
+    productTitle: '.product_title',
+
+    // Page titles and subtitle
+    pageSubtitle: '.page__subtitle',
+    pageTitle: ".page__title",
+
     // Sign picker widget
     signPickerWidget: '.sign-picker-widget',
 
@@ -70,8 +77,10 @@ export default {
     adCardJoinplusSidebar: '.ad-card-join-aplus', // A+ card sidebar
     adVideoSidebar: '#d_flexrec_t_sky_m_none_1',
     carouselSectionTitle: '.carousel-container > .section__title',
-    carouselPreviousArrow: '.previous',
-    carouselNextArrow: '.next',
+
+    
+    MoreHorocarouselPreviousArrow: '.more-horoscopes-carousel > .carousel-container > .main-carousel > .previous',
+    MoreHorocarouselNextArrow: '.more-horoscopes-carousel > .carousel-container > .main-carousel > .next',
 
     // Carousel tempo horoscope cards
     cardDaily: '.card--daily',
@@ -111,21 +120,32 @@ export default {
     datingHeaderLinkList: '.dating > .column__header',
     datingLinkList: '.love > .links',
 
-    // Reccomended reports carousel
     // // Recommended reports images - STORE section
-    firstSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(1)',
-    secondSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(2)', 
-    thirdSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(3)', 
-    fourthSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(4)', 
-    fifthSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(5)', 
-    sixthSliderReport: '.recommended-reports-carousel > div > div > div > div > div:nth-child(6)', 
+    // Adjust the name of the report depending of the location
 
-    firstSliderLink: ".mt-1 div:nth-of-type(1) > .card",
-    secondSliderLink: ".mt-1 div:nth-of-type(2) > .card",
-    thirdSliderLink: ".mt-1 div:nth-of-type(3) > .card",
-    fourthSliderLink: ".mt-1 div:nth-of-type(4) > .card",
-    fifthSliderLink: ".mt-1 div:nth-of-type(5) > .card",
-    sixthSliderLink: ".mt-1 div:nth-of-type(6) > .card",
+    firstSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(1)',
+    secondSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(2)', 
+    thirdSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(3)', 
+    fourthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(4)', 
+    fifthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(5)', 
+    sixthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(6)', 
+
+    // Complete card
+    firstSliderCard: ".mt-1 div:nth-of-type(1) > .card",
+    secondSliderCard: ".mt-1 div:nth-of-type(2) > .card",
+    thirdSliderCard: ".mt-1 div:nth-of-type(3) > .card",
+    fourthSliderCard: ".mt-1 div:nth-of-type(4) > .card",
+    fifthSliderCard: ".mt-1 div:nth-of-type(5) > .card",
+    sixthSliderCard: ".mt-1 div:nth-of-type(6) > .card",
+
+    // Link title to the store
+    firstSliderLinkTitle: '.mt-1 div:nth-of-type(1) > .card > div > h5',
+    secondSliderLinkTitle: '.mt-1 div:nth-of-type(2) > .card > div > h5',//'.mt-1 div:nth-of-type(2) > .card > div:nth-child(2) > h5',
+    thirdSliderLinkTitle: '.mt-1 div:nth-of-type(3) > .card > div > h5',
+    fourthSliderLinkTitle: '.mt-1 div:nth-of-type(4) > .card > div > h5',
+    fifthSliderLinkTitle: '.mt-1 div:nth-of-type(5) > .card > div > h5',
+    sixthSliderLinkTitle: '.mt-1 div:nth-of-type(6) > .card > div > h5',
+    
     // Ad banner bottom
     adBottomBanner: '#d_banner_t_banner_m_none_1'
 }
