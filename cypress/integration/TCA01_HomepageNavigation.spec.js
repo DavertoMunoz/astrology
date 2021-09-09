@@ -25,7 +25,7 @@ it('Confirm all images from Horoscope section are visible', () => {
 
 })
 
-it.only('verify Horoscope section images', () =>  {
+it('verify Horoscope section images', () =>  {
     homepage.horoscopeImagesIcons()
 
 })
