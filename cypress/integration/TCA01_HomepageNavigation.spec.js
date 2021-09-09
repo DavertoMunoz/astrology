@@ -30,6 +30,7 @@ it('verify Horoscope section images', () =>  {
 
 })
 
+// PENDIENTE DE CHECAR EL DATE PICKER
 it('verify Learn section images', () =>  {
     homepage.learnSectionImages()
 

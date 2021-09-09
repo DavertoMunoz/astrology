@@ -48,13 +48,13 @@ verifyCarouselLinksList() {
     cy.get(shared_locators.cardMonthly).should('be.visible');
     cy.get(shared_locators.cardYearly).should('be.visible');
 
-    cy.get(shared_locators.carouselNextArrow).click();
+    cy.get(shared_locators.MoreHorocarouselNextArrow).click(); // Fixed locator
 
     cy.get(shared_locators.cardChinese).should('be.visible');
     cy.get(shared_locators.cardLove).should('be.visible');
     cy.get(shared_locators.cardWork).should('be.visible');
 
-    cy.get(shared_locators.carouselNextArrow).click();
+    cy.get(shared_locators.MoreHorocarouselNextArrow).click();
 
     cy.get(shared_locators.cardDating).should('be.visible');
 

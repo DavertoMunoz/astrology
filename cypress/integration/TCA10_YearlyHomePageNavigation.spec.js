@@ -19,7 +19,7 @@ it('Confirm monthly paragraphs content are visible', function() {
     yearlyHomepage.confirmTheSkyThisYear();
 })
 
-it('Confirm extra elments, reports and Link list', function() {
+it.only('Confirm extra elments, reports and Link list', function() {
     yearlyHomepage.verifyReportsImagesandLinksList();
 })
 

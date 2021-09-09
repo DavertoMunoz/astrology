@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+import dayjs from "dayjs";
 import homepage_locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/homepage_locators.js";
 import Homepage_Locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/homepage_locators.js";
 
@@ -10,7 +11,7 @@ class Homepage {
 
 
 visitHomepage() {
-cy.visit("https://www.astrology.com/us/home.aspx");
+    cy.visit(Cypress.env('homePage'));
 
 }
 
@@ -89,9 +90,13 @@ learnSectionImages() {
 cy.scrollTo(0, 1000)
 // Birth Chart widget selection
 cy.get('#birth-chart-widget').should('be.visible');
-cy.get('#month').select('3');
-cy.get('#day').select('15');
-cy.get('#year').select('1981');
+var localizedFormat = require('dayjs/plugin/localizedFormat'); // PENDING!
+dayjs.extend(localizedFormat);
+dayjs().format('L')
+cy.get('#bc-dob').click().type('03-15-1981')
+// cy.get('#month').select('3');
+// cy.get('#day').select('15');
+// cy.get('#year').select('1981');
 cy.get('#bc-submit').click();
 cy.wait(300);
 cy.url().should('contain', '/birth-chart/');
