@@ -143,7 +143,7 @@ recommendedReportChineseIndex() {
 
     cy.get(shared_locators.sixthSliderReportImg).should('be.visible');
     cy.get(shared_locators.sixthSliderLinkTitle).click();
-    cy.url().should('contain', '/product/yearly-horoscope/?utm_source');
+    cy.url().should('contain', '/product/yearly-horoscope/');
     cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.yearPremiumHoroscope);
     })

@@ -187,19 +187,22 @@ cy.go('back')
 
 // Shop Premium Horoscope
 cy.get("[alt='2021 Premium Horoscope']").click()
-cy.get(homepage_locators.premiumHoroDescription).should('contain.text', 'The tide is turning! If 2021 was the year of change, get ready to experience more of that in the year ahead. In 2022, we will experience more growth collectively, as well as at a personal level. This is the time to allow yourself to dream and make things happen!')
+cy.get(homepage_locators.premiumHoroDescriptionTitle).should('contain.text', '2022 is the year you’ve been waiting for!')
+cy.get(homepage_locators.premiumHoroDescriptionSecondP).should('contain.text', 'The tide is turning! If 2021 was the year of change, get ready to experience more of that in the year ahead. In 2022, we will experience more growth collectively, as well as at a personal level. This is the time to allow yourself to dream and make things happen!')
+cy.get(homepage_locators.premiumHoroDescriptionThirdP).should('contain.text', 'Your 2022 Premium Horoscope will help you uncover your gifts and talents so you can make the most in love, health, career, and finances.')
+
 cy.go('back')
 
 
 // Shop tarot reading
 cy.get("[alt='2021 Tarot Reading']").click()
-cy.get(homepage_locators.tarotReadDescription).should('contain.text', 'It’s time to clear away the confusion and see things more clearly with your 2021 Tarot Reading. This detailed 13-card reading makes your path crystal-clear so you can make important life-changing decisions. With the information revealed in this reading, you’ll finally see the light!')
+cy.get(homepage_locators.tarotReadDescription).should('contain.text', 'In 2022, our connection with the universe will deepen. What would you like to manifest for yourself? There is no better time than now to connect with the power of the Tarot with this detailed 13-card reading. Get crystal-clear on your path so you can make important life-changing decisions. With the information revealed in this reading, you’ll be unstoppable!')
 cy.go('back')
 
 
 // Shop Numerology
 cy.get("[alt='2021 numerology forecast']").click()
-cy.get(homepage_locators.numDescription).should('contain.text', 'In numerology, 2021 is a five year. It will be about embracing curiosity, self-expression, and personal freedom. The essence of the number five will encourage you to break free and live your life to the fullest by embracing your uniqueness.')
+cy.get(homepage_locators.numDescription).should('contain.text', 'In numerology, 2022 is a six year. After making many changes and adjustments last year, 2022 will be about accepting and assuming responsibility for making the most of our new reality. In numerology, the number six is about seeking out stability, strengthening relationships, and working towards something meaningful.')
 cy.go('back')
 
 
