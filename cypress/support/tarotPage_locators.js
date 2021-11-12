@@ -69,8 +69,8 @@ export default {
     tarotMakeaWishReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(5) > a',
     tarotAngelsReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(6) > a',
     tarotChakraReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(7) > a',
-    tarot2021ReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(8) > a',
-    tarot2021LoveReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(9) > a',
+    tarot2022ReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(8) > a',
+    tarot2022LoveReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(9) > a',
 
 
 }

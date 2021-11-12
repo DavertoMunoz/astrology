@@ -6,7 +6,7 @@ class ShopPage {
 
 visitShopPage() {
 
-cy.visit(Cypress.env('shopHomepage'));
+cy.visit(Cypress.env('shopHomepageProd'));
         
 }
 
@@ -42,30 +42,56 @@ ImageProductsVerification() {
 }
 
     productsPricesVerification() {
-    cy.get(shopPage_locators.homeSeptemberHoroPrice).should('contain.text', '14.95');
-    cy.get(shopPage_locators.homebirthChartPrice).should('contain.text', '24.95');
-    cy.get(shopPage_locators.homeLoveCompPrice).should('contain.text', '16.95');
-    cy.get(shopPage_locators.homeYesNoTarotPrice).should('contain.text', '8.95');
-    cy.get(shopPage_locators.homeLoveTarotPrice).should('contain.text', '6.95');
-    cy.get(shopPage_locators.homeLoveScorePrice).should('contain.text', '29.95');
-    cy.get(shopPage_locators.homeSoulMatePrice).should('contain.text', '24.95');
-    cy.get(shopPage_locators.homeMakeWishPrice).should('contain.text', '8.95');
-    cy.get(shopPage_locators.homeKarmaReportPrice).should('contain.text', '14.95');
-    cy.get(shopPage_locators.homeNatalMoonPrice).should('contain.text', '11.95');
-    cy.get(shopPage_locators.homePastPresentPrice).should('contain.text', '9.95');
-    cy.get(shopPage_locators.homeTreeLifePrice).should('contain.text', '24.95');
-    cy.get(shopPage_locators.homeTarotAngelsPrice).should('contain.text', '11.95');
-    cy.get(shopPage_locators.homeCareerReportPrice).should('contain.text', '19.95');
-    cy.get(shopPage_locators.homeTransitsReportPrice).should('contain.text', '19.95');
-    cy.get(shopPage_locators.homeChakraTarotPrice).should('contain.text', '14.95');
-    cy.get(shopPage_locators.home2021HoroPrice).should('contain.text', '24.95');
-    cy.get(shopPage_locators.home2021NumerologyPrice).should('contain.text', '19.95');
-    cy.get(shopPage_locators.home2021VedicPrice).should('contain.text', '19.95');
-    cy.get(shopPage_locators.home2021ChinesePrice).should('contain.text', '21.95');
-    cy.get(shopPage_locators.home2021TarotPrice).should('contain.text', '19.95');
-    cy.get(shopPage_locators.home2021LoveTarotPrice).should('contain.text', '19.95');
-    cy.get(shopPage_locators.homeAplusSubPrice).should('contain.text', '29.97');
-    }
+
+    cy.fixture("reportsNamesPrices.json").then(json => {
+    cy.get(shopPage_locators.homeNovemberHoroPrice).should('have.text', json.monthlyReportPrice);
+    cy.get(shopPage_locators.homebirthChartPrice).should('have.text', json.birthNatalChartPrice);
+    cy.get(shopPage_locators.homeLoveCompPrice).should('have.text', json.loveCompatibilityPrice);
+    cy.get(shopPage_locators.homeYesNoTarotPrice).should('have.text', json.yesNoTarotPrice);
+    cy.get(shopPage_locators.homeLoveTarotPrice).should('have.text', json.loveTarotReadingPrice);
+    cy.get(shopPage_locators.homeLoveScorePrice).should('have.text', json.loveScorePrice);
+    cy.get(shopPage_locators.homeSoulMatePrice).should('have.text', json.soulMateTarotPrice);
+    cy.get(shopPage_locators.homeMakeWishPrice).should('have.text', json.makeWishTarotPrice);
+    cy.get(shopPage_locators.homeKarmaReportPrice).should('have.text', json.karmaReportPrice);
+    cy.get(shopPage_locators.homeNatalMoonPrice).should('have.text', json.natalMoonReportPrice);
+    cy.get(shopPage_locators.homePastPresentPrice).should('have.text', json.pastPresentFutureTarotPrice);
+    cy.get(shopPage_locators.homeTreeLifePrice).should('have.text', json.treeOfLifeTarotPrice);
+    cy.get(shopPage_locators.homeTarotAngelsPrice).should('have.text', json.tarotOfAngelsPrice);
+    cy.get(shopPage_locators.homeCareerReportPrice).should('have.text', json.careerReportPrice);
+    cy.get(shopPage_locators.homeTransitsReportPrice).should('have.text', json.monthPersonalTransitsPrice);
+    cy.get(shopPage_locators.homeChakraTarotPrice).should('have.text', json.chakraTarotReadingPrice);
+    
+    // Yearly
+    cy.get(".post-3098 [aria-hidden='true'] bdi").then(hiddenPrice => {
+        if (hiddenPrice.is(':visible')) {
+
+        } else {
+            cy.get('.post-3098 ins bdi').should('contain.text', "10.97");        
+        }
+         // assert.isOk
+    })
+
+    // cy.get(shopPage_locators.home2021HoroPrice).should('have.text', json.yearPremiumHoroscopePrice);
+    // cy.get(shopPage_locators.home2021NumerologyPrice).should('have.text', json.yearNumerologyPrice);
+
+    cy.get(".post-2786 [aria-hidden='true'] bdi").then(hiddenPrice => {
+        if (hiddenPrice.is(':visible')) {
+
+        } else {
+            cy.get('.post-2786 bdi').should('have.text', "9.97");        
+        }
+        // assert.isOk
+    })
+
+
+    // cy.get(shopPage_locators.home2021VedicPrice).should('have.text', json.yearVedicHoroscopePrice);
+    // cy.get(shopPage_locators.home2021ChinesePrice).should('have.text', json.yearChineseHoroscopePrice);
+    // cy.get(shopPage_locators.home2021TarotPrice).should('have.text', json.yearTarotReadingPrice);
+    // cy.get(shopPage_locators.home2021LoveTarotPrice).should('have.text', json.yearLoveTarotReadingPrice);
+    // cy.get(shopPage_locators.homeAplusSubPrice).should('have.text', json.astrologyPlusSubPriceyes);
+
+        })
+}
 }
 
 

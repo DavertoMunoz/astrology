@@ -6,7 +6,7 @@ export default {
     shopDescription: ".page-description > p", 
 
     // Product Images
-    homeSeptemberHoroImg: "[alt='September Horoscope']",
+    homeNovemberHoroImg: "[alt='november horoscope']",
     homebirthChartImg: "[alt='birth-natal-chart']",
     homeLoveCompImg: "[alt='love-compatibility']",
     homeYesNoTarotImg: "[alt='Yes No Tarot']",
@@ -31,7 +31,7 @@ export default {
     homeAplusSubImg: "[src='https://shop.astrology.com/wp-content/uploads/sites/5/2020/09/acomstoregraphics-17-324x324.png']",
 
     // Product prices
-    homeSeptemberHoroPrice: ".post-183856 bdi", // 14.95
+    homeNovemberHoroPrice: ".post-195537 bdi", // 14.95
     homebirthChartPrice: ".post-22 bdi", // 24.95
     homeLoveCompPrice: ".post-25 bdi", // 16.95
     homeYesNoTarotPrice: ".post-15645 bdi", //8.95

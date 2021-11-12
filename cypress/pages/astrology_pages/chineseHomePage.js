@@ -9,7 +9,7 @@ class ChineseHomepage {
 
     visitChineseHomepage() {
     
-    cy.visit(Cypress.env('chineseSignsHomePage'));
+    cy.visit(Cypress.env('chineseSignsHomePageProd'));
         
 }
 
@@ -98,7 +98,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.firstSliderReportImg).should('be.visible');
     cy.get(shared_locators.firstSliderLinkTitle).click();
     cy.url().should('contain', '/product/astrology-plus/?utm_source');
-    cy.fixture('reportsNames.json').then(json => {
+    cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.astrologyPlusSub);
     })
     cy.go('back');
@@ -106,7 +106,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.secondSliderReportImg).should('be.visible');
     cy.get(shared_locators.secondSliderLinkTitle).click();
     cy.url().should('contain', '/product/career-report/?utm_source');
-    cy.fixture('reportsNames.json').then(json => {
+    cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.careerReport);
     })
     cy.go('back');
@@ -114,7 +114,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.secondSliderReportImg).should('be.visible');
     cy.get(shared_locators.secondSliderLinkTitle).click();
     cy.url().should('contain', '/product/career-report/?utm_source');
-    cy.fixture('reportsNames.json').then(json => {
+    cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.careerReport);
     })
     cy.go('back');
@@ -124,7 +124,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.fourthSliderReportImg).should('be.visible');
     cy.get(shared_locators.fourthSliderLinkTitle).click();
     cy.url().should('contain', '/product/yearly-chinese-horoscope/?utm_source');
-    cy.fixture('reportsNames.json').then(json => {
+    cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.yearChineseHoroscope);
     })
     cy.go('back');
@@ -134,7 +134,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.fifthSliderReportImg).should('be.visible');
     cy.get(shared_locators.fifthSliderLinkTitle).click();
     cy.url().should('contain', '/product/2021-vedic-horoscope/?utm_source');
-    cy.fixture('reportsNames.json').then(json => {
+    cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.yearVedicHoroscope);
     })
     cy.go('back');
@@ -143,8 +143,8 @@ recommendedReportChineseIndex() {
 
     cy.get(shared_locators.sixthSliderReportImg).should('be.visible');
     cy.get(shared_locators.sixthSliderLinkTitle).click();
-    cy.url().should('contain', '/product/2021-premium-horoscope/?utm_source');
-    cy.fixture('reportsNames.json').then(json => {
+    cy.url().should('contain', '/product/yearly-horoscope/?utm_source');
+    cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.yearPremiumHoroscope);
     })
 

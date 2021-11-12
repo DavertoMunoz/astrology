@@ -17,7 +17,7 @@ class LearnHomePage {
 
 visitLearnPage() {
 
-cy.visit(Cypress.env('learnHomepage'));
+cy.visit(Cypress.env('learnHomepageProd'));
 
 }
 
@@ -51,7 +51,7 @@ cy.get(learnPage_locators.carouselPlanetLink).should('have.attr', 'href').and('i
 cy.visit(href);
 cy.url().should('contain', '/planets');    
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -62,7 +62,7 @@ cy.get(learnPage_locators.carouselAsteroidsLink).should('have.attr', 'href').and
 cy.visit(href);
 cy.url().should('contain', '/asteroids');    
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -73,7 +73,7 @@ cy.get(learnPage_locators.carouselElementsLink).should('have.attr', 'href').and(
 cy.visit(href);
 cy.url().should('contain', '/elements');    
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -85,7 +85,7 @@ cy.get(learnPage_locators.carouselModalitiesLink).should('have.attr', 'href').an
 cy.visit(href);
 cy.url().should('contain', '/modalities');    
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -96,7 +96,7 @@ cy.get(learnPage_locators.carouselHousesLink).should('have.attr', 'href').and('i
 cy.visit(href);
 cy.url().should('contain', '/houses');    
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -109,7 +109,7 @@ cy.get(learnPage_locators.carouselTransitsLink).should('have.attr', 'href').and(
 cy.visit(href);
 cy.url().should('contain', '/aspects-and-transits');    
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -124,7 +124,7 @@ cy.get(learnPage_locators.carouselCuspLink).should('have.attr', 'href').and('inc
 cy.visit(href);
 cy.url().should('contain', '/on-the-cusp');    
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -139,7 +139,7 @@ cy.visit(href);
 cy.url().should('contain', '/retrograde');    
 
 })
-cy.request(Cypress.env("planetsHomepage")).then((response) => {
+cy.request(Cypress.env("planetsHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 
 cy.go('back');

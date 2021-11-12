@@ -2,7 +2,6 @@
 
 import dayjs from "dayjs";
 import homepage_locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/homepage_locators.js";
-import Homepage_Locators from "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/support/homepage_locators.js";
 
  // COMPLETED
 
@@ -11,7 +10,7 @@ class Homepage {
 
 
 visitHomepage() {
-    cy.visit(Cypress.env('homePage'));
+    cy.visit(Cypress.env('homePageProd'));
 
 }
 
@@ -77,7 +76,7 @@ horoscopeImagesIcons() {
 cy.scrollTo(0, 300);
 cy.get(homepage_locators.homePremiumMonthlyImage).should('be.visible');
 cy.get("[alt='Chinese Zodiac Horoscopes']").should('be.visible');
-cy.get("[alt='2021 Yearly Horoscopes']").should('be.visible');
+cy.get("[alt='2022 Yearly Horoscopes']").should('be.visible');
 cy.get('.icon-widget-love').should('be.visible');
 cy.get('.icon-widget-career').should('be.visible');
 cy.get('.icon-widget-dating').should('be.visible');
@@ -93,15 +92,15 @@ cy.get('#birth-chart-widget').should('be.visible');
 var localizedFormat = require('dayjs/plugin/localizedFormat'); // PENDING!
 dayjs.extend(localizedFormat);
 dayjs().format('L')
-cy.get('#bc-dob').click().type('03-15-1981')
+// cy.get('#bc-dob').click().type('03-15-1981')
 // cy.get('#month').select('3');
 // cy.get('#day').select('15');
 // cy.get('#year').select('1981');
-cy.get('#bc-submit').click();
-cy.wait(300);
-cy.url().should('contain', '/birth-chart/');
-cy.go('back');
-cy.wait(300);
+// cy.get('#bc-submit').click();
+
+// cy.url().should('contain', '/birth-chart/');
+// cy.go('back');
+
 
 // Card images assertions
 cy.scrollTo(100, 0)
@@ -130,7 +129,7 @@ cy.get(homepage_locators.tarotCareerCompCard).should('be.visible') // Career Com
 cy.get(homepage_locators.howToUseImage).should('be.visible') // How to use, image
 cy.get(homepage_locators.cardMeaningImage) // Card meanings image
 cy.get(homepage_locators.yesNoWidgetCard).click() //Card No. 3 from yes/no widget
-cy.wait(300)
+
 
 // Correct Link assertions
 cy.url().should('eq', 'https://www.astrology.com/tarot/yes-no.html')
@@ -159,7 +158,7 @@ cy.scrollTo(0, 3000) // Scroll to shop section
 // Verify that the images are visible
 cy.get(homepage_locators.homePremiumMonthlyImage).should('be.visible')
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get('.product_title').should('contain.text', 'September Horoscope');
+cy.get('.product_title').should('contain.text', 'Monthly Horoscope');
 //cy.get('.page-title').should('not.contain.text', "Oops! That page can’t be found.");
 cy.go('back');
 cy.get(homepage_locators.homeBcImage).should('be.visible')
@@ -171,15 +170,15 @@ cy.get(homepage_locators.homeNumerologyImage).should('be.visible')
 // Links and page confirmation
 // Shop Monthly Page Description
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get(homepage_locators.monthlyDescription).should('contain.text', 'We begin the month under the sun in Virgo, helping us fine-tune our many different routines so our lives can work at their best. Four planets are also retrograde, bringing a slower pace of life and allowing us to, little by little, catch our breath.')
+cy.get(homepage_locators.monthlyDescription).should('contain.text', 'By reactivating the energy of the ongoing Saturn-Uranus square, the astrology of November brings the culmination of all the changes that have been building up in our lives during the entire year.')
 cy.go('back')
-cy.wait(300)
+
 
 // Shop Birth chart page description
 cy.get("[alt='birth horoscope + natal chart']").click()
 cy.get(homepage_locators.birthChartDescription).should('contain.text', 'Your birth chart is a map of the stars’ alignments at the exact moment you were born, which reveals your areas of greatest potential and your unique personality characteristics. Find out how the planets’ positions at your birth influence your entire life, from your relationships to your finances and much more.')
 cy.go('back')
-cy.wait(300)
+
 
 // Shop Love Compatibility
 cy.get("[alt='Love Compatibility Report']").click()
@@ -188,21 +187,21 @@ cy.go('back')
 
 // Shop Premium Horoscope
 cy.get("[alt='2021 Premium Horoscope']").click()
-cy.get(homepage_locators.premiumHoroDescription).should('contain.text', 'Get ready to experience full freedom, as the year ahead will support your individuality like no other. What have you always secretly wished for? Now more than ever, it’s at your disposal!')
+cy.get(homepage_locators.premiumHoroDescription).should('contain.text', 'The tide is turning! If 2021 was the year of change, get ready to experience more of that in the year ahead. In 2022, we will experience more growth collectively, as well as at a personal level. This is the time to allow yourself to dream and make things happen!')
 cy.go('back')
-cy.wait(300)
+
 
 // Shop tarot reading
 cy.get("[alt='2021 Tarot Reading']").click()
 cy.get(homepage_locators.tarotReadDescription).should('contain.text', 'It’s time to clear away the confusion and see things more clearly with your 2021 Tarot Reading. This detailed 13-card reading makes your path crystal-clear so you can make important life-changing decisions. With the information revealed in this reading, you’ll finally see the light!')
 cy.go('back')
-cy.wait(300)
+
 
 // Shop Numerology
 cy.get("[alt='2021 numerology forecast']").click()
 cy.get(homepage_locators.numDescription).should('contain.text', 'In numerology, 2021 is a five year. It will be about embracing curiosity, self-expression, and personal freedom. The essence of the number five will encourage you to break free and live your life to the fullest by embracing your uniqueness.')
 cy.go('back')
-cy.wait(300)
+
 
 cy.get('.section-shop > .section__cta').click()
 cy.url().should('eq', 'https://shop.astrology.com/?utm_source=direct&utm_medium=button&utm_campaign=home-shop-most-popular-shop-now-button')
@@ -253,12 +252,12 @@ cy.scrollTo(0, 4400);
 cy.get('.aplus-banner').should('be.visible'); // banner
 cy.get("[src='/images-US/astrology-plus/aplus-graphic-circle.png']").should('be.visible'); // banner image A plus
 cy.get('.text-container > .btn').click();
-cy.wait(300);
+
 cy.url().should('include', '/product/astrology-plus/?utm_source=site&utm_medium=footer&utm_campaign=home-aplus'); // Link banner
 cy.go('back');
 cy.scrollTo('bottom');
 cy.get('[href="/us/aboutus.aspx"]').click() // About us footer link
-cy.wait(300);
+
 cy.location();
 cy.url().should('eq', 'https://www.astrology.com/us/aboutus.aspx');
 cy.go('back');

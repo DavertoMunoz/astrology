@@ -6,7 +6,7 @@ class YearlyHomePage {
 
     visitYearlyHomePage() {
     
-    cy.visit(Cypress.env('yearlyHomePage'));
+    cy.visit(Cypress.env('yearlyHomePageProd'));
         
 }
 
@@ -75,7 +75,7 @@ verifyReportsImagesandLinksList() {
     cy.get(shared_locators.firstSliderReportImg).should('be.visible');
     cy.get(shared_locators.firstSliderCard).should('have.attr', 'href').and('include', '/product/astrology-plus');
     cy.get(shared_locators.secondSliderReportImg).should('be.visible');
-    cy.get(shared_locators.secondSliderCard).should('have.attr', 'href').and('include', '/product/september-2021-horoscope');
+    cy.get(shared_locators.secondSliderCard).should('have.attr', 'href').and('include', '/product/monthly-horoscope');
     cy.get(shared_locators.thirdSliderReportImg).should('be.visible');
     cy.get(shared_locators.thirdSliderCard).should('have.attr', 'href').and('include', '/product/astrology-plus/');
 

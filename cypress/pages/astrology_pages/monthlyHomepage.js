@@ -6,7 +6,7 @@ class MonthlyHomepage {
 
     visitMonthlyHomePage() {
     
-    cy.visit(Cypress.env('monthlyHomePage'));
+    cy.visit(Cypress.env('monthlyHomePageProd'));
         
 }
 
@@ -32,7 +32,7 @@ confirmTheSkyThisMonth() {
     cy.get(shared_locators.theSkyTitle).should('contain.text', 'Month');
     cy.get(shared_locators.firstContentBody).should('be.visible');
     cy.contains('Continue Reading').click();
-    cy.url().should('include', '/article/september');
+    cy.url().should('include', '/article/november');
     cy.get('h1').should('be.visible');
     cy.get('.byline').should('be.visible'); // Author
     cy.get('.meta__date').should('be.visible'); // Date
@@ -72,7 +72,7 @@ verifyReportsImagesandLinksList() {
     // Reccomended reports
     //cy.get(shared_locators.premiumMonthlyReportImage).should('be.visible');
     cy.get(shared_locators.firstSliderReportImg).should('be.visible');
-    cy.get(shared_locators.firstSliderCard).should('have.attr', 'href').and('include', '/product/september-2021');
+    cy.get(shared_locators.firstSliderCard).should('have.attr', 'href').and('include', '/product/monthly-horoscope');
     cy.get(shared_locators.secondSliderReportImg).should('be.visible');
     cy.get(shared_locators.secondSliderCard).should('have.attr', 'href').and('include', '/product/birth-horoscope-natal-chart');
     cy.get(shared_locators.thirdSliderReportImg).should('be.visible');

@@ -17,7 +17,7 @@ it('Confirm products images in shop', function() {
     shopPage.ImageProductsVerification();
 })
 
-it('Confirm Products Prices in Shop Main page', function() {
+it.only('Confirm Products Prices in Shop Main page', function() {
     shopPage.productsPricesVerification();
 })
 })

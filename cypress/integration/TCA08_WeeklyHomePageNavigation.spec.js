@@ -20,7 +20,7 @@ it('Confirm weekly paragraphs content are visible', function() {
     weeklyHomepagePage.confirmTheSkyThisWeek();
 })
 
-it.only('Verify visibility of carousel, links and ad elements', function() {
+it('Verify visibility of carousel, links and ad elements', function() {
     weeklyHomepagePage.verifyCarouselLinksList();
 })
 

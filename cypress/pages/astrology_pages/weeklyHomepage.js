@@ -6,7 +6,7 @@ class WeeklyHomepage {
 
     visitWeeklyHomePage() {
     
-    cy.visit(Cypress.env('weeklyHomepage'));
+    cy.visit(Cypress.env('weeklyHomepageProd'));
         
 }
 

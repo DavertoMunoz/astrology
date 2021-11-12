@@ -17,7 +17,7 @@ export default {
 
     // Sign Images
     ratCardImage: "[alt='Chinese sign of the Rat']",
-    oxCardImage: "[alt='Chinese sign of the Ox']",
+    oxCardImage: "[alt='Chinese sign of the Ox']", 
     tigerCardImage: "[alt='Chinese sign of the Tiger']",
     rabbitCardImage: "[alt='Chinese sign of the Rabbit']",
     dragonCardImage: "[alt='Chinese sign of the Dragon']",

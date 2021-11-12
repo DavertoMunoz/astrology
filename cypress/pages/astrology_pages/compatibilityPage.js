@@ -9,7 +9,7 @@ class CompatibilityPage {
 
 visitCompatibilityPage() {
 
-cy.visit(Cypress.env('compatibilityHomepage'));
+cy.visit(Cypress.env('compatibilityHomepageProd'));
     
 }
 
@@ -49,7 +49,7 @@ cy.get(compatibilityPage_locators.gameCarousel8ballLink).should('have.attr', 'hr
 cy.visit(href);
 cy.url().should('contain', '/magic-8-ball-love');    
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -60,7 +60,7 @@ cy.get(compatibilityPage_locators.gameCarouselCrushLink).should('have.attr', 'hr
 cy.visit(href);
 cy.url().should('contain', '/secret-crush');    
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -71,7 +71,7 @@ cy.get(compatibilityPage_locators.gameCarouselGenieLink).should('have.attr', 'hr
 cy.visit(href);
 cy.url().should('contain', '/game-ask-the-genie');    
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -85,7 +85,7 @@ cy.get(compatibilityPage_locators.gameCarouselCookieLink).should('have.attr', 'h
 cy.visit(href);
 cy.url().should('contain', '/fortune-cookie');    
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -97,7 +97,7 @@ cy.get(compatibilityPage_locators.gameCarouselBookLink).should('have.attr', 'hre
 cy.visit(href);
 cy.url().should('contain', '/book-of-love');    
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 })
 
@@ -109,7 +109,7 @@ cy.get(compatibilityPage_locators.gameCarouselKarmicLink).should('have.attr', 'h
 cy.visit(href);
 cy.url().should('contain', '/daily-karmic-number');    
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 
 cy.go('back');
@@ -124,7 +124,7 @@ cy.get(compatibilityPage_locators.sliderLoveReportLink).should('have.attr', 'hre
 cy.visit(href);
 cy.url().should('contain', '/love-compatibility-report');  
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 cy.go('back');
 })
@@ -135,7 +135,7 @@ cy.get(compatibilityPage_locators.sliderLoveScoreLink).should('have.attr', 'href
 cy.visit(href);
 cy.url().should('contain', '/love-score');  
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 cy.go('back');
 })
@@ -146,7 +146,7 @@ cy.get(compatibilityPage_locators.sliderKarmaLink).should('have.attr', 'href').a
 cy.visit(href);
 cy.url().should('contain', '/karma-love-report');  
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 cy.go('back');
 })
@@ -161,7 +161,7 @@ cy.get(compatibilityPage_locators.sliderLoveTarotLink).should('have.attr', 'href
 cy.visit(href);
 cy.url().should('contain', '/love-tarot-reading');  
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 cy.go('back');
 })
@@ -172,18 +172,18 @@ cy.get(compatibilityPage_locators.sliderSoulMateLink).should('have.attr', 'href'
 cy.visit(href);
 cy.url().should('contain', '/soulmate-tarot-reading');  
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 cy.go('back');
 })
 
 
 cy.get(compatibilityPage_locators.slider2021LoveImg).should('be.visible');
-cy.get(compatibilityPage_locators.slider2021LoveLink).should('have.attr', 'href').and('include', '/2021-love-tarot-reading').then((href) => {
+cy.get(compatibilityPage_locators.slider2021LoveLink).should('have.attr', 'href').and('include', '/yearly-love-tarot-reading').then((href) => {
 cy.visit(href);
-cy.url().should('contain', '/2021-love-tarot-reading');  
+cy.url().should('contain', '/yearly-love-tarot-reading/');  
 })
-cy.request(Cypress.env("compatibilityHomepage")).then((response) => {
+cy.request(Cypress.env("compatibilityHomepageProd")).then((response) => {
 expect(response.status).to.eq(200);
 cy.go('back');
 })

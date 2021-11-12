@@ -11,7 +11,7 @@ class TarotPage {
 
 visitTarotPage() {
 
-cy.visit(Cypress.env('tarotHomepage'));
+cy.visit(Cypress.env('tarotHomepageProd'));
     
 }
 
@@ -127,8 +127,8 @@ recommendedReportsVerification() {
     cy.get(learnPage_locators.carouselRecommendedNext).click();
 
     cy.get(tarotPage_locators.tarotChakraReportLink).should('have.attr', 'href').and('include', '/chakra-tarot-reading');
-    cy.get(tarotPage_locators.tarot2021ReportLink).should('have.attr', 'href').and('include', '/2021-tarot-reading');
-    cy.get(tarotPage_locators.tarot2021LoveReportLink).should('have.attr', 'href').and('include', '/2021-love-tarot-reading');
+    cy.get(tarotPage_locators.tarot2022ReportLink).should('have.attr', 'href').and('include', '/2022-tarot-reading');
+    cy.get(tarotPage_locators.tarot2022LoveReportLink).should('have.attr', 'href').and('include', '/yearly-love-tarot-reading');
 
 }
 
