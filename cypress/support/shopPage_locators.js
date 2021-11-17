@@ -47,7 +47,7 @@ export default {
     homeCareerReportPrice: ".post-18030 bdi", // 19.95
     homeTransitsReportPrice: ".post-13882 bdi", // 19.95
     homeChakraTarotPrice: ".post-27744 bdi", // 14.95 
-    home2021HoroPrice: ".post-2349 bdi", // 24.95
+    homeYearlyHoroPrice: ".post-2349 bdi", // 24.95
     home2021NumerologyPrice: ".post-3450 bdi", // 19.95
     home2021VedicPrice: ".post-2786 bdi", // 19.95
     home2021ChinesePrice: ".post-3098 bdi", // 21.95

@@ -133,7 +133,7 @@ recommendedReportChineseIndex() {
 
     cy.get(shared_locators.fifthSliderReportImg).should('be.visible');
     cy.get(shared_locators.fifthSliderLinkTitle).click();
-    cy.url().should('contain', '/product/2021-vedic-horoscope/?utm_source');
+    cy.url().should('contain', '/product/2022-vedic-horoscope/?utm_source');
     cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.yearVedicHoroscope);
     })

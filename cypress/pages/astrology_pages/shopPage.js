@@ -60,16 +60,17 @@ ImageProductsVerification() {
     cy.get(shopPage_locators.homeCareerReportPrice).should('have.text', json.careerReportPrice);
     cy.get(shopPage_locators.homeTransitsReportPrice).should('have.text', json.monthPersonalTransitsPrice);
     cy.get(shopPage_locators.homeChakraTarotPrice).should('have.text', json.chakraTarotReadingPrice);
+    cy.get(shopPage_locators.homeYearlyHoroPrice).should('have.text', json.yearPremiumHoroscopePrice);
     
     // Yearly
-    cy.get(".post-3098 [aria-hidden='true'] bdi").then(hiddenPrice => {
-        if (hiddenPrice.is(':visible')) {
+    // cy.get(".post-3098 [aria-hidden='true'] bdi").then(hiddenPrice => {
+    //     if (hiddenPrice.is(':visible')) {
 
-        } else {
-            cy.get('.post-3098 ins bdi').should('contain.text', "10.97");        
-        }
-         // assert.isOk
-    })
+    //     } else {
+    //         cy.get('.post-3098 ins bdi').should('contain.text', "10.97");        
+    //     }
+    //      // assert.isOk
+    // })
 
     // cy.get(shopPage_locators.home2021HoroPrice).should('have.text', json.yearPremiumHoroscopePrice);
     // cy.get(shopPage_locators.home2021NumerologyPrice).should('have.text', json.yearNumerologyPrice);
