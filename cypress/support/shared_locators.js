@@ -123,6 +123,10 @@ export default {
     // // Recommended reports images - STORE section
     // Adjust the name of the report depending of the location
 
+    recommendedNextArrow: ".mt-1 .next",
+    recommendedPreviousArrow: ".mt-1 .previous",
+
+
     firstSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(1)',
     secondSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(2)', 
     thirdSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(3)', 
@@ -145,6 +149,34 @@ export default {
     fourthSliderLinkTitle: '.mt-1 div:nth-of-type(4) > .card > div > h5',
     fifthSliderLinkTitle: '.mt-1 div:nth-of-type(5) > .card > div > h5',
     sixthSliderLinkTitle: '.mt-1 div:nth-of-type(6) > .card > div > h5',
+
+    // Most Popular on Astrology slides
+    mostPopularNextArrow: ".most-popular-on-acom-carousel .next",
+    mostPopularPreviousArrow: ".most-popular-on-acom-carousel .previous",
+
+    //
+
+    mostPopYesNoTarotTitle: ".quartz",
+    mostPopYesNoCardNum1: ".card-1",
+    mostPopYesNoCardNum2: ".card-2",
+    mostPopYesNoCardNum3: ".card-3",
+    mostPopYesNoCardNum4: ".card-4",
+    mostPopYesNoCardNum5: ".card-5",
+    mostPopYesNoCardNum6: ".card-6",
+    
+
+
+    mostPopfreeBCTitle: "#title_BC",
+
+
+    mostPopKeenWidget: "#module-content-parent.module-content > .tag",
+    keenMapMarker: "[alt='map marker']",
+    keenTalkPsychicBtn: ".module-keen-talk-with-psychic > .btn",
+
+    loveCompWidgetTitle: "#title",
+    loveCompWidgetFirstSign: "#first-sign",
+    loveCompWidgetSecondSign: "#second-sign",
+
     
     // Ad banner bottom
     adBottomBanner: '#d_banner_t_banner_m_none_1'
