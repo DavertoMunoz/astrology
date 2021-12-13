@@ -11,6 +11,7 @@
       "compatibilityHomepageProd": "https://www.astrology.com/compatibility",
       "tarotHomepageProd": "https://www.astrology.com/tarot.html",
       "shopHomepageProd": "https://shop.astrology.com/",
+      "zodiacSignsHomepageProd": "https://www.astrology.com/zodiac-signs",
 
       "homePageSTG": "https://stage.astrology.com/us/home.aspx",
       "dailyHoroHomepageSTG": "https://stage.astrology.com/horoscope/daily.html",
@@ -23,6 +24,8 @@
       "compatibilityHomepageSTG": "https://stage.astrology.com/compatibility",
       "tarotHomepageSTG": "https://stage.astrology.com/tarot.html",
       "shopHomepageSTG": "https://shop-stage.astrology.com/",
+      "zodiacSignsHomepageSTG": "https://stage.astrology.com/zodiac-signs",
+      
 
 
 

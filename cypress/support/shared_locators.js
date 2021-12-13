@@ -154,7 +154,7 @@ export default {
     mostPopularNextArrow: ".most-popular-on-acom-carousel .next",
     mostPopularPreviousArrow: ".most-popular-on-acom-carousel .previous",
 
-    //
+    // 
 
     mostPopYesNoTarotTitle: ".quartz",
     mostPopYesNoCardNum1: ".card-1",
@@ -177,7 +177,11 @@ export default {
     loveCompWidgetFirstSign: "#first-sign",
     loveCompWidgetSecondSign: "#second-sign",
 
-    
+     // Ask the genie
+    askTheGenieTitle: ".is-selected > #module-content-parent > .tag",
+
+
     // Ad banner bottom
-    adBottomBanner: '#d_banner_t_banner_m_none_1'
+    adBottomBanner: "#d_banner_t_banner_m_none_1",
+    postQuestionBtn: "[name='genie_module'] > .btn",
 }
