@@ -6,7 +6,7 @@ it('Test new Free Birth Chart page', function() {
 
 
 
-    cy.visit('https://test.astrology.com/birth-chart/')
+    cy.visit('https://www.astrology.com/birth-chart/')
     cy.get('.alpha').contains('Birth Chart Calculator')
     cy.get('.trim-content > :nth-child(1)').contains('Your birth chart, also known as an astrology or natal chart, is a map to the placement of the planets at the exact moment you were born. It holds the key to your unique life path and personality')
     // image loading

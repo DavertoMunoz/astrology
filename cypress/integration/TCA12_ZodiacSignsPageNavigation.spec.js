@@ -4,6 +4,7 @@ import zodiacSignsPage_Locators from "../support/zodiacSignsPage_Locators";
 import shared_locators from "../support/shared_locators";
 import ZodiacSignsPage from "../pages/astrology_pages/zodiacSignsPage";
 
+// COMPLETED
 describe('Zodiac Sign Page navigation assertions', function() {
     const zodiacSignsPage = new ZodiacSignsPage();
 
