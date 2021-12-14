@@ -10,7 +10,7 @@ class Homepage {
 
 
 visitHomepage() {
-    cy.visit(Cypress.env('homePageProd'));
+    cy.visit(Cypress.env('homePageProd')); //('https://www.astrology.com/us/home.aspx') (Cypress.env('homePageProd'));
 
 }
 
@@ -170,7 +170,7 @@ cy.get(homepage_locators.homeNumerologyImage).should('be.visible')
 // Links and page confirmation
 // Shop Monthly Page Description
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get(homepage_locators.monthlyDescription).should('contain.text', 'By reactivating the energy of the ongoing Saturn-Uranus square, the astrology of November brings the culmination of all the changes that have been building up in our lives during the entire year.')
+cy.get(homepage_locators.monthlyDescription).should('contain.text', 'As we enter December, we are in the middle of eclipse season. There’s electricity in the air as we wait for the last eclipse that will happen in the Gemini/Sagittarius axis. Expect a big ending around this time!')
 cy.go('back')
 
 

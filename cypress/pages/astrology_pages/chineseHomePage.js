@@ -7,9 +7,9 @@ import chineseTextMain from  "/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/
 class ChineseHomepage {
 
 
-    visitChineseHomepage() {
+visitChineseHomepage() {
     
-    cy.visit(Cypress.env('chineseSignsHomePageProd'));
+cy.visit(Cypress.env('chineseSignsHomePageProd'));
         
 }
 
