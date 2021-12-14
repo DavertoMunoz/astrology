@@ -12,7 +12,18 @@ describe('Zodiac Sign Page navigation assertions', function() {
         cy.viewport(1366, 768);
 })
 
-it('Assert chinese main card info', function() {
+it('Assert Zodiac Signs Icons and subtitle text', function() {
     zodiacSignsPage.verifyChooseYourSignModule();
 })
+
+it('Assert recommended reports sliders', function() {
+    zodiacSignsPage.verifyRecommendedReportsModule();
+
+})
+
+it('Verify Popular Widgets', function() {
+    zodiacSignsPage.verifyPopularWidgets();
+})
+
+
 })

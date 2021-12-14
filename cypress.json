@@ -89,6 +89,7 @@
 
       "watchForFIleChanges": false
     },
-    "projectId": "vubwqd"
+    "projectId": "vubwqd",
+    "pageLoadTimeout": 80000
   }
   

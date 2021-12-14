@@ -133,6 +133,8 @@ export default {
     fourthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(4)', 
     fifthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(5)', 
     sixthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(6)', 
+    seventhSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(7)',
+    eigthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(8)',
 
     // Complete card
     firstSliderCard: ".mt-1 div:nth-of-type(1) > .card",
@@ -141,6 +143,11 @@ export default {
     fourthSliderCard: ".mt-1 div:nth-of-type(4) > .card",
     fifthSliderCard: ".mt-1 div:nth-of-type(5) > .card",
     sixthSliderCard: ".mt-1 div:nth-of-type(6) > .card",
+    seventhSliderCard: ".mt-1 div:nth-of-type(7) > .card",
+    eighthSliderCard: ".mt-1 div:nth-of-type(8) > .card",
+
+
+    
 
     // Link title to the store
     firstSliderLinkTitle: '.mt-1 div:nth-of-type(1) > .card > div > h5',
@@ -150,7 +157,7 @@ export default {
     fifthSliderLinkTitle: '.mt-1 div:nth-of-type(5) > .card > div > h5',
     sixthSliderLinkTitle: '.mt-1 div:nth-of-type(6) > .card > div > h5',
 
-    // Most Popular on Astrology slides
+    // Most Popular Widgets on Astrology slides
     mostPopularNextArrow: ".most-popular-on-acom-carousel .next",
     mostPopularPreviousArrow: ".most-popular-on-acom-carousel .previous",
 

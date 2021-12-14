@@ -17,7 +17,7 @@ export default {
     scorpioCircleIcon: ".icon-sign-scorpio",
     sagittariusCircleIcon: ".icon-sign-sagittarius",
     capricornCircleIcon: ".icon-sign-capricorn",
-    aquariusCirceleIcon: ".icon-sign-aquarius",
+    aquariusCircleleIcon: ".icon-sign-aquarius",
     piscesCircleIcon: ".icon-sign-pisces",
     
     // Sign cards (icon, name and date with link to click)
