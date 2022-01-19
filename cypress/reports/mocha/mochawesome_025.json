@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-16T16:37:24.494Z",
+    "end": "2021-12-16T16:41:47.366Z",
+    "duration": 262872,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1c595552-e394-481f-8090-f224cec7ac3b",
+      "title": "",
+      "fullFile": "cypress/integration/TCA03_HoroDailyPageNav.spec.js",
+      "file": "cypress/integration/TCA03_HoroDailyPageNav.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "408f01fa-1136-4965-9f3f-d82c143b9471",
+          "title": "dailyHoroyNav",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm all sign icons are loading correctly",
+              "fullTitle": "dailyHoroyNav Confirm all sign icons are loading correctly",
+              "timedOut": null,
+              "duration": 90147,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homepage.signIconsConfirmation();",
+              "err": {},
+              "uuid": "b8b3583d-4ebf-4bc5-8512-0ba1f5e56e18",
+              "parentUUID": "408f01fa-1136-4965-9f3f-d82c143b9471",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Open daily page and confirm main elements",
+              "fullTitle": "dailyHoroyNav Open daily page and confirm main elements",
+              "timedOut": null,
+              "duration": 169468,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "horoscopesDaily.theSkyToday();",
+              "err": {},
+              "uuid": "3001c8ed-179d-454a-829c-38a1ac4a373d",
+              "parentUUID": "408f01fa-1136-4965-9f3f-d82c143b9471",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b8b3583d-4ebf-4bc5-8512-0ba1f5e56e18",
+            "3001c8ed-179d-454a-829c-38a1ac4a373d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 259615,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

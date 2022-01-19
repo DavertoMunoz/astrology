@@ -78,7 +78,7 @@ cy.get(homepage_locators.homePremiumMonthlyImage).should('be.visible');
 cy.get("[alt='Chinese Zodiac Horoscopes']").should('be.visible');
 cy.get("[alt='2022 Yearly Horoscopes']").should('be.visible');
 cy.get('.icon-widget-love').should('be.visible');
-cy.get('.icon-widget-career').should('be.visible');
+cy.get('.icon-widget-work').should('be.visible');
 cy.get('.icon-widget-dating').should('be.visible');
 
 }
@@ -170,7 +170,7 @@ cy.get(homepage_locators.homeNumerologyImage).should('be.visible')
 // Links and page confirmation
 // Shop Monthly Page Description
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get(homepage_locators.monthlyDescription).should('contain.text', 'As we enter December, we are in the middle of eclipse season. There’s electricity in the air as we wait for the last eclipse that will happen in the Gemini/Sagittarius axis. Expect a big ending around this time!')
+cy.get(homepage_locators.monthlyDescription).should('contain.text', "As we enter January, we are in the midst of Venus’ retrograde cycle. Love goddess is having us review our most important connections so we can move forward with more authentic bonds.");
 cy.go('back')
 
 

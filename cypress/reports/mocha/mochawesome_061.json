@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-22T18:52:44.831Z",
+    "end": "2021-12-22T18:52:55.840Z",
+    "duration": 11009,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "df4ae014-bf2d-4a2a-89be-f80f4979fbcd",
+      "title": "",
+      "fullFile": "cypress/integration/TCA12_ZodiacSignsPageNavigation.spec.js",
+      "file": "cypress/integration/TCA12_ZodiacSignsPageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b49b431a-b7f9-4adb-b516-ae7d320ffc06",
+          "title": "Zodiac Sign Page navigation assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assert Zodiac Signs Icons and subtitle text",
+              "fullTitle": "Zodiac Sign Page navigation assertions Assert Zodiac Signs Icons and subtitle text",
+              "timedOut": null,
+              "duration": 3543,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "zodiacSignsPage.verifyChooseYourSignModule();",
+              "err": {},
+              "uuid": "69f1b958-1979-43d9-a780-d69c2bfe1c99",
+              "parentUUID": "b49b431a-b7f9-4adb-b516-ae7d320ffc06",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assert recommended reports sliders",
+              "fullTitle": "Zodiac Sign Page navigation assertions Assert recommended reports sliders",
+              "timedOut": null,
+              "duration": 2809,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "zodiacSignsPage.verifyRecommendedReportsModule();",
+              "err": {},
+              "uuid": "52c317b0-bcef-46ea-8742-364fb174ee6e",
+              "parentUUID": "b49b431a-b7f9-4adb-b516-ae7d320ffc06",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Popular Widgets",
+              "fullTitle": "Zodiac Sign Page navigation assertions Verify Popular Widgets",
+              "timedOut": null,
+              "duration": 3145,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "zodiacSignsPage.verifyPopularWidgets();",
+              "err": {},
+              "uuid": "aebb6a40-d652-4dff-b8c1-e97e69c07b84",
+              "parentUUID": "b49b431a-b7f9-4adb-b516-ae7d320ffc06",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "69f1b958-1979-43d9-a780-d69c2bfe1c99",
+            "52c317b0-bcef-46ea-8742-364fb174ee6e",
+            "aebb6a40-d652-4dff-b8c1-e97e69c07b84"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9497,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 2,
+    "pending": 0,
+    "failures": 3,
+    "start": "2021-12-17T21:05:46.464Z",
+    "end": "2021-12-17T21:12:45.102Z",
+    "duration": 418638,
+    "testsRegistered": 5,
+    "passPercent": 40,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95b2e604-9875-4aa3-8aa8-29dbaa4d0972",
+      "title": "",
+      "fullFile": "cypress/integration/TCA11_ChineseHomePageNav.spec.js",
+      "file": "cypress/integration/TCA11_ChineseHomePageNav.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a613cfaf-5009-4597-a740-852b147e97db",
+          "title": "Chinese page elements navigation asserions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assert chinese main card info",
+              "fullTitle": "Chinese page elements navigation asserions Assert chinese main card info",
+              "timedOut": null,
+              "duration": 4718,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chineseHomepage.verifyChineseSignCards();",
+              "err": {},
+              "uuid": "44abe568-c3e7-4a52-8a25-0e189d9c4420",
+              "parentUUID": "a613cfaf-5009-4597-a740-852b147e97db",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assert carousel cards contents",
+              "fullTitle": "Chinese page elements navigation asserions Assert carousel cards contents",
+              "timedOut": null,
+              "duration": 6419,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chineseHomepage.verifyCarouselcontents();",
+              "err": {},
+              "uuid": "a5b6462b-8e9e-44ec-9f07-026c64465a79",
+              "parentUUID": "a613cfaf-5009-4597-a740-852b147e97db",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify main text content",
+              "fullTitle": "Chinese page elements navigation asserions Verify main text content",
+              "timedOut": null,
+              "duration": 100728,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA11_ChineseHomePageNav.spec.js/Chinese page elements navigation asserions -- Verify main text content (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "chineseHomepage.verifyTextContent();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: expected '<div.mb-4.mt-md-2.mb-md-5>' to have text 'Chinese astrology, or Sheng Xiao (生肖), is an ancient astrological practice that can be traced back to the Han Dynasty. This kind of astrology is founded on the concepts of yin and yang, with significant elemental, natural, and lunar influences.', but the text was '\\n\\n\\nMore Personalized Horoscopes\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nWeekly Chinese\\nDec 12 - Dec 18\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n \\nMonthly Chinese\\nDecember\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nYearly Chinese\\n2022\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nWeekly\\nDec 12 - Dec 18\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nMonthly\\nDecember\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nYearly\\n2022\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Love\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Work\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Dating\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n'",
+                "estack": "AssertionError: Timed out retrying after 80000ms: expected '<div.mb-4.mt-md-2.mb-md-5>' to have text 'Chinese astrology, or Sheng Xiao (生肖), is an ancient astrological practice that can be traced back to the Han Dynasty. This kind of astrology is founded on the concepts of yin and yang, with significant elemental, natural, and lunar influences.', but the text was '\\n\\n\\nMore Personalized Horoscopes\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nWeekly Chinese\\nDec 12 - Dec 18\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n \\nMonthly Chinese\\nDecember\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nYearly Chinese\\n2022\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nWeekly\\nDec 12 - Dec 18\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nMonthly\\nDecember\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nYearly\\n2022\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Love\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Work\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Dating\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n'\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA11_ChineseHomePageNav.spec.js:246:45)",
+                "diff": "- '\\n\\n\\nMore Personalized Horoscopes\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nWeekly Chinese\\nDec 12 - Dec 18\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n \\nMonthly Chinese\\nDecember\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nYearly Chinese\\n2022\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nWeekly\\nDec 12 - Dec 18\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nMonthly\\nDecember\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nYearly\\n2022\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Love\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Work\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n\\nDaily Dating\\nDecember 17\\n\\n\\nRead more \\n\\n\\n\\n\\n\\n'\n+ 'Chinese astrology, or Sheng Xiao (生肖), is an ancient astrological practice that can be traced back to the Han Dynasty. This kind of astrology is founded on the concepts of yin and yang, with significant elemental, natural, and lunar influences.'\n"
+              },
+              "uuid": "38ee011b-1d01-40e9-bb1f-c7e2147fc8a0",
+              "parentUUID": "a613cfaf-5009-4597-a740-852b147e97db",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Recommended reports verification",
+              "fullTitle": "Chinese page elements navigation asserions Recommended reports verification",
+              "timedOut": null,
+              "duration": 219197,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA11_ChineseHomePageNav.spec.js/Chinese page elements navigation asserions -- Recommended reports verification (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "chineseHomepage.recommendedReportChineseIndex();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: expected 'https://shop.astrology.com/product/annual-vedic-horoscope/?utm_source=direct&utm_medium=widget&utm_campaign=horoscope-report-carousel' to include '/product/2022-vedic-horoscope/?utm_source'",
+                "estack": "AssertionError: Timed out retrying after 80000ms: expected 'https://shop.astrology.com/product/annual-vedic-horoscope/?utm_source=direct&utm_medium=widget&utm_campaign=horoscope-report-carousel' to include '/product/2022-vedic-horoscope/?utm_source'\n    at ChineseHomepage.recommendedReportChineseIndex (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA11_ChineseHomePageNav.spec.js:288:14)\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA11_ChineseHomePageNav.spec.js:149:21)",
+                "diff": null
+              },
+              "uuid": "a232f97e-074d-4aa5-a2ce-095306cb5a56",
+              "parentUUID": "a613cfaf-5009-4597-a740-852b147e97db",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Chinese ads, banners and link list",
+              "fullTitle": "Chinese page elements navigation asserions Chinese ads, banners and link list",
+              "timedOut": null,
+              "duration": 85564,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA11_ChineseHomePageNav.spec.js/Chinese page elements navigation asserions -- Chinese ads, banners and link list (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "chineseHomepage.ChineseMoreHoroscopesLinkList();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: expected '<div#d_flexrec_t_sky_m_none_1>' to be 'visible'\n\nThis element `<div#d_flexrec_t_sky_m_none_1>` is not visible because it has an effective width and height of: `299 x 0` pixels.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: expected '<div#d_flexrec_t_sky_m_none_1>' to be 'visible'\n\nThis element `<div#d_flexrec_t_sky_m_none_1>` is not visible because it has an effective width and height of: `299 x 0` pixels.\n    at ChineseHomepage.ChineseMoreHoroscopesLinkList (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA11_ChineseHomePageNav.spec.js:305:53)\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA11_ChineseHomePageNav.spec.js:152:21)",
+                "diff": null
+              },
+              "uuid": "892b9861-c221-414e-b133-0031092c6326",
+              "parentUUID": "a613cfaf-5009-4597-a740-852b147e97db",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "44abe568-c3e7-4a52-8a25-0e189d9c4420",
+            "a5b6462b-8e9e-44ec-9f07-026c64465a79"
+          ],
+          "failures": [
+            "38ee011b-1d01-40e9-bb1f-c7e2147fc8a0",
+            "a232f97e-074d-4aa5-a2ce-095306cb5a56",
+            "892b9861-c221-414e-b133-0031092c6326"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 416626,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

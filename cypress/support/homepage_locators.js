@@ -29,7 +29,7 @@ monthlyMain: '.section-horoscopes > .grid-container > .news-card > .grid__item >
 chineseImage: '.horoscope-cards > :nth-child(1) > .card > .card__media > .media-wrapper > .img-responsive',
 yearlyImage: '.horoscope-cards > :nth-child(2) > .card > .card__media > .media-wrapper > .img-responsive',
 loveImage: '.icon-widget-love',
-workImage: '.icon-widget-career',
+workImage: '.icon-widget-work',
 datingImage: '.icon-widget-dating',
 
 // Learn section images
@@ -50,7 +50,7 @@ yesNoWidgetCard: '.card-3',
 // Shop section locators (Images and descriptions)
 
 // Locators
-homePremiumMonthlyImage: "[alt='Premium December Horoscope']",
+homePremiumMonthlyImage: "[alt='Premium January Horoscope']",
 homeBcImage: "[alt='birth horoscope + natal chart']",
 homeLoveCompImage: "[alt='Love Compatibility Report']",
 homeYearImage: "[alt='2021 Premium Horoscope']",

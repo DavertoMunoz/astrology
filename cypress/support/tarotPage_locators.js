@@ -73,4 +73,6 @@ export default {
     tarot2022LoveReportLink: '.recommended-reports-carousel > div > div > div > div > div:nth-child(9) > a',
 
 
+
+
 }

@@ -12,6 +12,7 @@
       "tarotHomepageProd": "https://www.astrology.com/tarot.html",
       "shopHomepageProd": "https://shop.astrology.com/",
       "zodiacSignsHomepageProd": "https://www.astrology.com/zodiac-signs",
+      "yesNoTarotHomePageProd": "https://www.astrology.com/tarot/yes-no.html",
 
       "homePageSTG": "https://stage.astrology.com/us/home.aspx",
       "dailyHoroHomepageSTG": "https://stage.astrology.com/horoscope/daily.html",
@@ -26,9 +27,6 @@
       "shopHomepageSTG": "https://shop-stage.astrology.com/",
       "zodiacSignsHomepageSTG": "https://stage.astrology.com/zodiac-signs",
       
-
-
-
       "monthlyReportUrlProd": "https://shop.astrology.com/product/september-2021-horoscope/?utm_source=store&utm_medium=site&utm_campaign=astro-store",
       "loveTarotBundleUrlProd": "https://shop.astrology.com/product/love-tarot-bundle/?utm_source=store&utm_medium=site&utm_campaign=astro-store",
       "birthNatalChartUrlProd": "https://shop.astrology.com/product/birth-horoscope-natal-chart/?utm_source=store&utm_medium=site&utm_campaign=astro-store",
@@ -87,9 +85,23 @@
 
 
 
-      "watchForFIleChanges": false
+    "watchForFIleChanges": false
     },
+    
     "projectId": "vubwqd",
-    "pageLoadTimeout": 80000
+    "defaultCommandTimeout": 80000,
+    "pageLoadTimeout": 180000,
+    "requestTimeout": 180000,
+    "reporter": "cypress-multi-reporters",
+    "blockHosts": ["*fonts.googleapis.com"],
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+    }
   }
-  
+}

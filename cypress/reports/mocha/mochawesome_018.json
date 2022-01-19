@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-15T21:17:32.270Z",
+    "end": "2021-12-15T21:19:20.413Z",
+    "duration": 108143,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1db09360-377c-4a9c-be1d-54c075287ece",
+      "title": "",
+      "fullFile": "cypress/integration/TCA09_MonthlyHomePageNavigation.spec.js",
+      "file": "cypress/integration/TCA09_MonthlyHomePageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4307cd9-3dec-488f-8991-1d45f22dde59",
+          "title": "Monthly Homepage Navigation elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm sign info card widget",
+              "fullTitle": "Monthly Homepage Navigation elements Confirm sign info card widget",
+              "timedOut": null,
+              "duration": 4132,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "monthlyHomePage.verifySignPickerWidget();",
+              "err": {},
+              "uuid": "3534031e-02e1-468b-8de3-302fe0563cad",
+              "parentUUID": "a4307cd9-3dec-488f-8991-1d45f22dde59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirm monthly paragraphs content are visible",
+              "fullTitle": "Monthly Homepage Navigation elements Confirm monthly paragraphs content are visible",
+              "timedOut": null,
+              "duration": 86465,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA09_MonthlyHomePageNavigation.spec.js/Monthly Homepage Navigation elements -- Confirm monthly paragraphs content are visible (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "monthlyHomePage.confirmTheSkyThisMonth();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: expected 'https://www.astrology.com/article/december-astrology-forecast' to include '/article/november'",
+                "estack": "AssertionError: Timed out retrying after 80000ms: expected 'https://www.astrology.com/article/december-astrology-forecast' to include '/article/november'\n    at MonthlyHomepage.confirmTheSkyThisMonth (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA09_MonthlyHomePageNavigation.spec.js:189:14)\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA09_MonthlyHomePageNavigation.spec.js:134:21)",
+                "diff": null
+              },
+              "uuid": "fe1ee521-1d85-4a6e-bcd9-5c893cc8f638",
+              "parentUUID": "a4307cd9-3dec-488f-8991-1d45f22dde59",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirm extra elments, reports and Link list",
+              "fullTitle": "Monthly Homepage Navigation elements Confirm extra elments, reports and Link list",
+              "timedOut": null,
+              "duration": 14262,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "monthlyHomePage.verifyReportsImagesandLinksList();",
+              "err": {},
+              "uuid": "0c126db8-c1a9-409b-b194-dc9f2e28de71",
+              "parentUUID": "a4307cd9-3dec-488f-8991-1d45f22dde59",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3534031e-02e1-468b-8de3-302fe0563cad",
+            "0c126db8-c1a9-409b-b194-dc9f2e28de71"
+          ],
+          "failures": [
+            "fe1ee521-1d85-4a6e-bcd9-5c893cc8f638"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 104859,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

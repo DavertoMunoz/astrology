@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-19T00:47:26.880Z",
+    "end": "2022-01-19T00:49:58.221Z",
+    "duration": 151341,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cf4fd502-8477-41e8-9fcd-1c5f67430440",
+      "title": "",
+      "fullFile": "cypress/integration/TCA05_CompatibilityPageNavigation.spec.js",
+      "file": "cypress/integration/TCA05_CompatibilityPageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16850b85-ba72-4ff3-8419-62f5f6b936c4",
+          "title": "Confirm Compatibility Page Navigation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm Comp Main Widgets",
+              "fullTitle": "Confirm Compatibility Page Navigation Confirm Comp Main Widgets",
+              "timedOut": null,
+              "duration": 3177,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "compatibilityPage.CompatibilityWidgetsVerification();",
+              "err": {},
+              "uuid": "8a8925d3-fa17-4276-ba51-ab92178fbdf4",
+              "parentUUID": "16850b85-ba72-4ff3-8419-62f5f6b936c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Personality Traits Verification",
+              "fullTitle": "Confirm Compatibility Page Navigation Personality Traits Verification",
+              "timedOut": null,
+              "duration": 4064,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "compatibilityPage.PersonalityTraitsVerification();",
+              "err": {},
+              "uuid": "77e2a9dd-abbd-4046-891b-04b53d7fe39b",
+              "parentUUID": "16850b85-ba72-4ff3-8419-62f5f6b936c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Games carousel Verification",
+              "fullTitle": "Confirm Compatibility Page Navigation Games carousel Verification",
+              "timedOut": null,
+              "duration": 75992,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "compatibilityPage.GamesCarouselFunctionality();",
+              "err": {},
+              "uuid": "45e39a40-6610-4663-988a-55a84ada91c3",
+              "parentUUID": "16850b85-ba72-4ff3-8419-62f5f6b936c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Recommended Reports Slider",
+              "fullTitle": "Confirm Compatibility Page Navigation Recommended Reports Slider",
+              "timedOut": null,
+              "duration": 66040,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "compatibilityPage.RecommendedReportsSlides();",
+              "err": {},
+              "uuid": "6318f7aa-b5b3-48e9-a66f-33b2d04f8c3f",
+              "parentUUID": "16850b85-ba72-4ff3-8419-62f5f6b936c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8a8925d3-fa17-4276-ba51-ab92178fbdf4",
+            "77e2a9dd-abbd-4046-891b-04b53d7fe39b",
+            "45e39a40-6610-4663-988a-55a84ada91c3",
+            "6318f7aa-b5b3-48e9-a66f-33b2d04f8c3f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 149273,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

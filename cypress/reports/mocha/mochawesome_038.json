@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-17T20:37:20.646Z",
+    "end": "2021-12-17T20:41:48.667Z",
+    "duration": 268021,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "c0e53774-303c-41cb-ac15-f0bb88c1ee5a",
+      "title": "",
+      "fullFile": "cypress/integration/TCA03_HoroDailyPageNav.spec.js",
+      "file": "cypress/integration/TCA03_HoroDailyPageNav.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ebc538a7-0407-4b79-84a5-652ffccce3d0",
+          "title": "dailyHoroyNav",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm all sign icons are loading correctly",
+              "fullTitle": "dailyHoroyNav Confirm all sign icons are loading correctly",
+              "timedOut": null,
+              "duration": 210121,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homepage.signIconsConfirmation();",
+              "err": {
+                "message": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `dailyHoroyNav`",
+                "estack": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `dailyHoroyNav`\n    at https://www.astrology.com/__cypress/runner/cypress_runner.js:159546:81\n    at tryCatcher (https://www.astrology.com/__cypress/runner/cypress_runner.js:13196:23)\n    at https://www.astrology.com/__cypress/runner/cypress_runner.js:8318:41\n    at tryCatcher (https://www.astrology.com/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (https://www.astrology.com/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (https://www.astrology.com/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (https://www.astrology.com/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (https://www.astrology.com/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (https://www.astrology.com/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (https://www.astrology.com/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.astrology.com/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (https://www.astrology.com/__cypress/runner/cypress_runner.js:7782:14)",
+                "diff": null
+              },
+              "uuid": "cb1d97c4-3795-4e47-aa97-189cfdff3461",
+              "parentUUID": "ebc538a7-0407-4b79-84a5-652ffccce3d0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Open daily page and confirm main elements",
+              "fullTitle": "dailyHoroyNav Open daily page and confirm main elements",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "horoscopesDaily.theSkyToday();",
+              "err": {},
+              "uuid": "8fb84694-9289-4d34-9012-393c39988b69",
+              "parentUUID": "ebc538a7-0407-4b79-84a5-652ffccce3d0",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cb1d97c4-3795-4e47-aa97-189cfdff3461"
+          ],
+          "pending": [],
+          "skipped": [
+            "8fb84694-9289-4d34-9012-393c39988b69"
+          ],
+          "duration": 210121,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

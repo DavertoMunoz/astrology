@@ -1,0 +1,92 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-17T20:35:42.892Z",
+    "end": "2021-12-17T20:37:08.275Z",
+    "duration": 85383,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1fbc53f-ae19-4d7c-adfc-003856ca32b8",
+      "title": "",
+      "fullFile": "cypress/integration/TCA02_Horo4842_newBirthChartPage.spec.js",
+      "file": "cypress/integration/TCA02_Horo4842_newBirthChartPage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Test new Free Birth Chart page",
+          "fullTitle": "Test new Free Birth Chart page",
+          "timedOut": null,
+          "duration": 84251,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA02_Horo4842_newBirthChartPage.spec.js/Test new Free Birth Chart page (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "cy.visit('https://www.astrology.com/birth-chart/');\ncy.get('.alpha').contains('Birth Chart Calculator');\ncy.get('.trim-content > :nth-child(1)').contains('Your birth chart, also known as an astrology or natal chart, is a map to the placement of the planets at the exact moment you were born. It holds the key to your unique life path and personality'); // image loading\ncy.get('.form__media > img').should('be.visible');\ncy.get('#first-name').type('Wayne Godot');\ncy.get('#gender-selector').select('Male');\ncy.get('#date-of-birth').type('08/05/1980');\ncy.get('#time-of-birth').type('12:30');\ncy.get('#birth-location').type('Los ');\ncy.wait(300);\ncy.get('#birth-location').type('{downarrow}');\ncy.get('#birth-location').type('{downarrow}');\ncy.get('#birth-location').type('{downarrow}').click;\ncy.get('#TermOfServicesCheckBox').click();\ncy.get('#email').type('cypresstest03@yopmail.com');\ncy.get('.form-skin > [type=\"submit\"]').click();\ncy.wait(300);\ncy.url().should('include', 'https://reports.astrology.com/v1/reports/'); //cy.get('[width=\"310\"]').should('include', 'Dear Wayne Godot')",
+          "err": {
+            "message": "CypressError: Timed out retrying after 80050ms: `cy.click()` failed because this element:\n\n`<input type=\"checkbox\" name=\"TermOfServicesCheckBox\" id=\"TermOfServicesCheckBox\" value=\"true\">`\n\nis being covered by another element:\n\n`<div class=\"pac-container pac-logo\" style=\"width: 406px; position: absolute; left: 46px; top: 1078px;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+            "estack": "CypressError: Timed out retrying after 80050ms: `cy.click()` failed because this element:\n\n`<input type=\"checkbox\" name=\"TermOfServicesCheckBox\" id=\"TermOfServicesCheckBox\" value=\"true\">`\n\nis being covered by another element:\n\n`<div class=\"pac-container pac-logo\" style=\"width: 406px; position: absolute; left: 46px; top: 1078px;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://www.astrology.com/__cypress/runner/cypress_runner.js:162804:78)\n    at ensureDescendents (https://www.astrology.com/__cypress/runner/cypress_runner.js:149590:8)\n    at ensureDescendentsAndScroll (https://www.astrology.com/__cypress/runner/cypress_runner.js:149597:14)\n    at ensureElIsNotCovered (https://www.astrology.com/__cypress/runner/cypress_runner.js:149731:5)\n    at runAllChecks (https://www.astrology.com/__cypress/runner/cypress_runner.js:149921:52)\n    at retryActionability (https://www.astrology.com/__cypress/runner/cypress_runner.js:149945:16)\n    at tryCatcher (https://www.astrology.com/__cypress/runner/cypress_runner.js:13196:23)\n    at Function.Promise.attempt.Promise.try (https://www.astrology.com/__cypress/runner/cypress_runner.js:10470:29)\n    at whenStable (https://www.astrology.com/__cypress/runner/cypress_runner.js:167470:63)\n    at https://www.astrology.com/__cypress/runner/cypress_runner.js:166968:14\n    at tryCatcher (https://www.astrology.com/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (https://www.astrology.com/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (https://www.astrology.com/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (https://www.astrology.com/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (https://www.astrology.com/__cypress/runner/cypress_runner.js:11313:18)\n    at Promise._fulfill (https://www.astrology.com/__cypress/runner/cypress_runner.js:11257:18)\nFrom Your Spec Code:\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA02_Horo4842_newBirthChartPage.spec.js:115:37)",
+            "diff": null
+          },
+          "uuid": "66c5d3a2-fca6-41ca-be2b-70c19a6075dd",
+          "parentUUID": "b1fbc53f-ae19-4d7c-adfc-003856ca32b8",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "66c5d3a2-fca6-41ca-be2b-70c19a6075dd"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 84251,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

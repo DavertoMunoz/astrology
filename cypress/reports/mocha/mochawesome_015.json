@@ -1,0 +1,188 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-15T21:09:49.072Z",
+    "end": "2021-12-15T21:12:53.275Z",
+    "duration": 184203,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1fb87a75-f0e3-4674-aed1-4a4df8224d18",
+      "title": "",
+      "fullFile": "cypress/integration/TCA06_TarotPageNavigation.spec.js",
+      "file": "cypress/integration/TCA06_TarotPageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "da194f97-d11e-40bf-b7ff-1cde2c9b0595",
+          "title": "Confirm Tarot Page Navigation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm Comp Main Widgets",
+              "fullTitle": "Confirm Tarot Page Navigation Confirm Comp Main Widgets",
+              "timedOut": null,
+              "duration": 125851,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA06_TarotPageNavigation.spec.js/Confirm Tarot Page Navigation -- Confirm Comp Main Widgets (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "tarotPage.verifyMainCardContainer();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 80050ms: `cy.click()` could not be issued because this element is currently animating:\n\n`<img src=\"/images-US/icons/icon-tarot-breakup.svg\" alt=\"breakup tarot\">`\n\nYou can fix this problem by:\n  - Passing `{force: true}` which disables all error checking\n  - Passing `{waitForAnimations: false}` which disables waiting on animations\n  - Passing `{animationDistanceThreshold: 20}` which decreases the sensitivity\n\nhttps://on.cypress.io/element-is-animating",
+                "estack": "CypressError: Timed out retrying after 80050ms: `cy.click()` could not be issued because this element is currently animating:\n\n`<img src=\"/images-US/icons/icon-tarot-breakup.svg\" alt=\"breakup tarot\">`\n\nYou can fix this problem by:\n  - Passing `{force: true}` which disables all error checking\n  - Passing `{waitForAnimations: false}` which disables waiting on animations\n  - Passing `{animationDistanceThreshold: 20}` which decreases the sensitivity\n\nhttps://on.cypress.io/element-is-animating\n    at $Cy.ensureElementIsNotAnimating (https://www.astrology.com/__cypress/runner/cypress_runner.js:162582:76)\n    at ensureNotAnimating (https://www.astrology.com/__cypress/runner/cypress_runner.js:149789:6)\n    at runAllChecks (https://www.astrology.com/__cypress/runner/cypress_runner.js:149913:9)\n    at retryActionability (https://www.astrology.com/__cypress/runner/cypress_runner.js:149945:16)\n    at tryCatcher (https://www.astrology.com/__cypress/runner/cypress_runner.js:13196:23)\n    at Function.Promise.attempt.Promise.try (https://www.astrology.com/__cypress/runner/cypress_runner.js:10470:29)\n    at whenStable (https://www.astrology.com/__cypress/runner/cypress_runner.js:167470:63)\n    at https://www.astrology.com/__cypress/runner/cypress_runner.js:166968:14\n    at tryCatcher (https://www.astrology.com/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (https://www.astrology.com/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (https://www.astrology.com/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (https://www.astrology.com/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (https://www.astrology.com/__cypress/runner/cypress_runner.js:11313:18)\n    at Promise._fulfill (https://www.astrology.com/__cypress/runner/cypress_runner.js:11257:18)\n    at https://www.astrology.com/__cypress/runner/cypress_runner.js:12871:46\nFrom Your Spec Code:\n    at TarotPage.verifyMainCardContainer (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA06_TarotPageNavigation.spec.js:215:58)\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA06_TarotPageNavigation.spec.js:132:15)",
+                "diff": null
+              },
+              "uuid": "09daf2e4-bda6-42d2-934f-62543c4c0d09",
+              "parentUUID": "da194f97-d11e-40bf-b7ff-1cde2c9b0595",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirm Tarot for Begginers Section",
+              "fullTitle": "Confirm Tarot Page Navigation Confirm Tarot for Begginers Section",
+              "timedOut": null,
+              "duration": 30680,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "tarotPage.verifyTarotForBegginers();",
+              "err": {},
+              "uuid": "e1fa42c5-e57b-47c9-8b04-887da84734f6",
+              "parentUUID": "da194f97-d11e-40bf-b7ff-1cde2c9b0595",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Arcana cards section",
+              "fullTitle": "Confirm Tarot Page Navigation Arcana cards section",
+              "timedOut": null,
+              "duration": 7711,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "tarotPage.verifyArcanaCards();",
+              "err": {},
+              "uuid": "a9fac339-dc63-44ff-8f39-3d247d8ad275",
+              "parentUUID": "da194f97-d11e-40bf-b7ff-1cde2c9b0595",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Article images verification",
+              "fullTitle": "Confirm Tarot Page Navigation Article images verification",
+              "timedOut": null,
+              "duration": 7605,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "tarotPage.articlesSectionVerification();",
+              "err": {},
+              "uuid": "c1bd19f3-04d2-43a4-a910-7179e692950e",
+              "parentUUID": "da194f97-d11e-40bf-b7ff-1cde2c9b0595",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Recommended Reports Verification",
+              "fullTitle": "Confirm Tarot Page Navigation Recommended Reports Verification",
+              "timedOut": null,
+              "duration": 9201,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "tarotPage.recommendedReportsVerification();",
+              "err": {},
+              "uuid": "660d332a-e2d0-4176-b854-8f142147bdff",
+              "parentUUID": "da194f97-d11e-40bf-b7ff-1cde2c9b0595",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e1fa42c5-e57b-47c9-8b04-887da84734f6",
+            "a9fac339-dc63-44ff-8f39-3d247d8ad275",
+            "c1bd19f3-04d2-43a4-a910-7179e692950e",
+            "660d332a-e2d0-4176-b854-8f142147bdff"
+          ],
+          "failures": [
+            "09daf2e4-bda6-42d2-934f-62543c4c0d09"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 181048,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

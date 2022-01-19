@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-19T00:57:01.269Z",
+    "end": "2022-01-19T00:58:59.906Z",
+    "duration": 118637,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a28f4ea6-8b64-42df-ad59-d6b1f5cc9446",
+      "title": "",
+      "fullFile": "cypress/integration/TCA08_WeeklyHomePageNavigation.spec.js",
+      "file": "cypress/integration/TCA08_WeeklyHomePageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1ac1f81f-dcb4-473f-af78-0402d7e096ed",
+          "title": " Confirm Weekly Page Navigation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm sign info card widget",
+              "fullTitle": " Confirm Weekly Page Navigation Confirm sign info card widget",
+              "timedOut": null,
+              "duration": 6416,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "weeklyHomepagePage.verifySignPickerWidget();",
+              "err": {},
+              "uuid": "8b9a023d-90cf-4bc1-81a8-c3def459e3c4",
+              "parentUUID": "1ac1f81f-dcb4-473f-af78-0402d7e096ed",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirm weekly paragraphs content are visible",
+              "fullTitle": " Confirm Weekly Page Navigation Confirm weekly paragraphs content are visible",
+              "timedOut": null,
+              "duration": 25287,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "weeklyHomepagePage.confirmTheSkyThisWeek();",
+              "err": {},
+              "uuid": "0231ca95-8f12-480e-a846-a2a307528362",
+              "parentUUID": "1ac1f81f-dcb4-473f-af78-0402d7e096ed",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify visibility of carousel, links and ad elements",
+              "fullTitle": " Confirm Weekly Page Navigation Verify visibility of carousel, links and ad elements",
+              "timedOut": null,
+              "duration": 84929,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA08_WeeklyHomePageNavigation.spec.js/ Confirm Weekly Page Navigation -- Verify visibility of carousel, links and ad elements (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "weeklyHomepagePage.verifyCarouselLinksList();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: expected '<div#d_flexrec_t_sky_m_none_1>' to be 'visible'\n\nThis element `<div#d_flexrec_t_sky_m_none_1>` is not visible because it has an effective width and height of: `299 x 0` pixels.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: expected '<div#d_flexrec_t_sky_m_none_1>' to be 'visible'\n\nThis element `<div#d_flexrec_t_sky_m_none_1>` is not visible because it has an effective width and height of: `299 x 0` pixels.\n    at WeeklyHomepage.verifyCarouselLinksList (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA08_WeeklyHomePageNavigation.spec.js:198:53)\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA08_WeeklyHomePageNavigation.spec.js:135:24)",
+                "diff": null
+              },
+              "uuid": "a41cb570-5d13-45d7-b07d-666012d12913",
+              "parentUUID": "1ac1f81f-dcb4-473f-af78-0402d7e096ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8b9a023d-90cf-4bc1-81a8-c3def459e3c4",
+            "0231ca95-8f12-480e-a846-a2a307528362"
+          ],
+          "failures": [
+            "a41cb570-5d13-45d7-b07d-666012d12913"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 116632,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

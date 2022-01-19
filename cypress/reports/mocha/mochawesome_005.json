@@ -1,0 +1,276 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2021-12-15T19:35:13.703Z",
+    "end": "2021-12-15T19:35:15.293Z",
+    "duration": 1590,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+      "title": "",
+      "fullFile": "cypress/integration/TCA01_HomepageNavigation.spec.js",
+      "file": "cypress/integration/TCA01_HomepageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Open a.com homepage and confirm main elements",
+          "fullTitle": "Open a.com homepage and confirm main elements",
+          "timedOut": null,
+          "duration": 177,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/Open a.com homepage and confirm main elements (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.confirmMainElements();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:127:3)",
+            "diff": null
+          },
+          "uuid": "ed843265-14b9-4125-90df-7ff631be9804",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Confirm all sign icons are loading correctly",
+          "fullTitle": "Confirm all sign icons are loading correctly",
+          "timedOut": null,
+          "duration": 195,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/Confirm all sign icons are loading correctly (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.signIconsConfirmation();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:131:3)",
+            "diff": null
+          },
+          "uuid": "f1e15c64-510d-4577-984c-017f53f4eaf7",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Confirm all images from Horoscope section are visible",
+          "fullTitle": "Confirm all images from Horoscope section are visible",
+          "timedOut": null,
+          "duration": 164,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/Confirm all images from Horoscope section are visible (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.horoscopeSectionImages();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:135:3)",
+            "diff": null
+          },
+          "uuid": "6d1c73f7-abcd-4516-b4b0-2968d1457666",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "verify Horoscope section images",
+          "fullTitle": "verify Horoscope section images",
+          "timedOut": null,
+          "duration": 142,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/verify Horoscope section images (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.horoscopeImagesIcons();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:139:3)",
+            "diff": null
+          },
+          "uuid": "c93ed5e1-2711-4d6c-b9ff-e0733d03023a",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "verify Learn section images",
+          "fullTitle": "verify Learn section images",
+          "timedOut": null,
+          "duration": 128,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/verify Learn section images (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.learnSectionImages();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:144:3)",
+            "diff": null
+          },
+          "uuid": "46aff305-7baf-41d8-b1e2-d1474b992b9f",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "verify Tarot section elements",
+          "fullTitle": "verify Tarot section elements",
+          "timedOut": null,
+          "duration": 147,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/verify Tarot section elements (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.confirmTarotSectionElements();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:148:3)",
+            "diff": null
+          },
+          "uuid": "37461205-bea1-475d-8833-e9a4a3508594",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "verify Shop section elements",
+          "fullTitle": "verify Shop section elements",
+          "timedOut": null,
+          "duration": 170,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/verify Shop section elements (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.confirmShopSectionElements();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:152:3)",
+            "diff": null
+          },
+          "uuid": "1a86de81-f549-48ae-a719-40094b49c765",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "verify Compatibility section elements",
+          "fullTitle": "verify Compatibility section elements",
+          "timedOut": null,
+          "duration": 199,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/verify Compatibility section elements (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.confirmCompatibilitySectionElements();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:156:3)",
+            "diff": null
+          },
+          "uuid": "9b36e976-b10c-4722-9ef0-ccc3d029a73b",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Confirm miscellaneous elements",
+          "fullTitle": "Confirm miscellaneous elements",
+          "timedOut": null,
+          "duration": 167,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA01_HomepageNavigation.spec.js/Confirm miscellaneous elements (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "homepage.visitHomepage();\nhomepage.confirmMiscElements();",
+          "err": {
+            "message": "ReferenceError: homepage is not defined",
+            "estack": "ReferenceError: homepage is not defined\n    at Context.eval (http://localhost:50073/__cypress/tests?p=cypress/integration/TCA01_HomepageNavigation.spec.js:160:3)",
+            "diff": null
+          },
+          "uuid": "2f4a9447-0726-400f-a438-ee2988f27c34",
+          "parentUUID": "32f22f9b-6a08-4d55-877a-88ae7f646ba7",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "ed843265-14b9-4125-90df-7ff631be9804",
+        "f1e15c64-510d-4577-984c-017f53f4eaf7",
+        "6d1c73f7-abcd-4516-b4b0-2968d1457666",
+        "c93ed5e1-2711-4d6c-b9ff-e0733d03023a",
+        "46aff305-7baf-41d8-b1e2-d1474b992b9f",
+        "37461205-bea1-475d-8833-e9a4a3508594",
+        "1a86de81-f549-48ae-a719-40094b49c765",
+        "9b36e976-b10c-4722-9ef0-ccc3d029a73b",
+        "2f4a9447-0726-400f-a438-ee2988f27c34"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 1489,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

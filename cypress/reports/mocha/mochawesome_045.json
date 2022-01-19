@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-17T21:04:05.138Z",
+    "end": "2021-12-17T21:05:30.763Z",
+    "duration": 85625,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1a669c50-4482-4f32-a965-fb72b2061e38",
+      "title": "",
+      "fullFile": "cypress/integration/TCA10_YearlyHomePageNavigation.spec.js",
+      "file": "cypress/integration/TCA10_YearlyHomePageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25ed71c7-aa7f-4043-90c4-afa578173194",
+          "title": "Monthly Homepage Navigation elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm extra elments, reports and Link list",
+              "fullTitle": "Monthly Homepage Navigation elements Confirm extra elments, reports and Link list",
+              "timedOut": null,
+              "duration": 84218,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA10_YearlyHomePageNavigation.spec.js/Monthly Homepage Navigation elements -- Confirm extra elments, reports and Link list (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "yearlyHomepage.verifyReportsImagesandLinksList();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: expected '<div#d_flexrec_t_sky_m_none_1>' to be 'visible'\n\nThis element `<div#d_flexrec_t_sky_m_none_1>` is not visible because it has an effective width and height of: `299 x 0` pixels.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: expected '<div#d_flexrec_t_sky_m_none_1>' to be 'visible'\n\nThis element `<div#d_flexrec_t_sky_m_none_1>` is not visible because it has an effective width and height of: `299 x 0` pixels.\n    at YearlyHomePage.verifyReportsImagesandLinksList (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA10_YearlyHomePageNavigation.spec.js:223:53)\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA10_YearlyHomePageNavigation.spec.js:137:20)",
+                "diff": null
+              },
+              "uuid": "73360cc1-cb7b-49d2-b81f-cb435bd4c8db",
+              "parentUUID": "25ed71c7-aa7f-4043-90c4-afa578173194",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "73360cc1-cb7b-49d2-b81f-cb435bd4c8db"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 84218,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

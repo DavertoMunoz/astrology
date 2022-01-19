@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-15T21:27:57.675Z",
+    "end": "2021-12-15T21:28:02.781Z",
+    "duration": 5106,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "090a35e4-8c37-47d2-9c1b-87feed9c86da",
+      "title": "",
+      "fullFile": "cypress/integration/TCA13_YesNoTarotNavigation.spec.js",
+      "file": "cypress/integration/TCA13_YesNoTarotNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7500b1d3-668f-489c-9776-3fea7c6e96d8",
+          "title": "Yes No Tarot Elements and Card Selection",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assert elements and Card Selection",
+              "fullTitle": "Yes No Tarot Elements and Card Selection Assert elements and Card Selection",
+              "timedOut": null,
+              "duration": 3736,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "yesNoTarotHomepage.verifyYesNoTarotLandingagePickCard;",
+              "err": {},
+              "uuid": "f331bcb3-c117-49f7-856f-d52bb6dfc843",
+              "parentUUID": "7500b1d3-668f-489c-9776-3fea7c6e96d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f331bcb3-c117-49f7-856f-d52bb6dfc843"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3736,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

@@ -6,52 +6,61 @@ import Homepage from '/Users/dmunoz/Documents/Cypress_Ingenio/Astrology/cypress/
 describe('astroHomepageNav', function() {
     const homepage=new Homepage();
 
-beforeEach(() => {
-    homepage.visitHomepage()
-})
-
-it('Open a.com homepage and confirm main elements', function() {
-    homepage.confirmMainElements()
-
-})
+// beforeEach(() => {
+//     homepage.visitHomepage()
+// })
 
 it('Confirm all sign icons are loading correctly', function()  {
+    homepage.visitHomepage()
     homepage.signIconsConfirmation();
 
 })
     
 it('Confirm all images from Horoscope section are visible', () => {
-    homepage.horoscopeSectionImages()
+    homepage.visitHomepage()
+    homepage.horoscopeSectionImages();
 
 })
 
 it('verify Horoscope section images', () =>  {
-    homepage.horoscopeImagesIcons()
+    homepage.visitHomepage()
+    homepage.horoscopeImagesIcons();
 
 })
 
 // PENDIENTE DE CHECAR EL DATE PICKER
 it('verify Learn section images', () =>  {
-    homepage.learnSectionImages()
+    homepage.visitHomepage()
+    homepage.learnSectionImages();
 
 })
 
 it('verify Tarot section elements', () => {
-    homepage.confirmTarotSectionElements()
+    homepage.visitHomepage()
+    homepage.confirmTarotSectionElements();
 })
 
 it('verify Shop section elements', () => {
-     homepage.confirmShopSectionElements()
+    homepage.visitHomepage()
+    homepage.confirmShopSectionElements();
 
 })
 
 it('verify Compatibility section elements', () => {
-    homepage.confirmCompatibilitySectionElements()
+    homepage.visitHomepage()
+    homepage.confirmCompatibilitySectionElements();
 
 })
 
 it('Confirm miscellaneous elements', () => {
-    homepage.confirmMiscElements
+    homepage.visitHomepage()
+    homepage.confirmMiscElements();
+
+})
+
+it('Open a.com homepage and confirm main elements', function() {
+    homepage.visitHomepage()
+    homepage.confirmMainElements();
 
 })
 })
