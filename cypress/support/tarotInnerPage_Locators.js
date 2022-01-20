@@ -24,6 +24,12 @@ export default {
     taroReadinResultCard: "[alt='Tarot Reading Result']",
     pickAnothercardBtn: '.result-content > .btn',
     resultDescription: '.result-description',
+<<<<<<< HEAD
+=======
+
+    adStickyRight: "div.sticky > div",
+
+>>>>>>> yesNoTarotPage
     
     
     
