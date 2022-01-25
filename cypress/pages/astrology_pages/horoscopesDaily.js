@@ -19,13 +19,13 @@ theSkyToday() {
     let firstParagraph = '.snippet > .snippet__body'; // First paragraph of firsdt part
     let secondParagraph = '.snippet > .snippet__header p'; // Second paragrap of first part - Sometimes there is no second paragraph here.
     let carouselContainer = '.carousel-container';
-    let carouselWeeklyIcon = '.icon-weekly';
-    let carouselMonthlyIcon = '.icon-monthly';
-    let carouselYearlyIcon = '.icon-yearly';    
-    let carouselChineseIcon = '.icon-chinese'
-    let carouselLoveIcon = '.icon-love';
-    let carouseWorkIcon = '.icon-work';
-    let carouselDateIcon = '.icon-love';
+    let carouselWeeklyIcon = '.icon-widget-weekly';
+    let carouselMonthlyIcon = '.icon-widget-monthly';
+    let carouselYearlyIcon = '.icon-widget-yearly';    
+    let carouselChineseIcon = '.icon-widget-chinese'
+    let carouselLoveIcon = '.icon-widget-love';
+    let carouseWorkIcon = '.icon-widget-work';
+    let carouselDateIcon = '.icon-widget-love';
     let carouselNextButton = '.next';
     let carouselBackButton = '.previous'
     

@@ -15,7 +15,20 @@ describe('Yes No Tarot Elements and Card Selection', function() {
 })
 
 it('Assert elements and Card Selection', function() {
-    yesNoTarotHomepage.verifyYesNoTarotLandingPagePickCard()
+    yesNoTarotHomepage.verifyYesNoTarotLandingPagePickCard();
 
 })
+
+it('Assert recommended reports on Yes No tarot page', function() {
+    yesNoTarotHomepage.verifyRecommendedReports();
+})
+
+it('Verify Popular Widgets', function() {
+    yesNoTarotHomepage.verifyPopularWidgets();
+
+})
+
+// it('Assert ad visibility on page', function() {
+//     yesNoTarotHomepage.adsVisibility();
+// })
 })

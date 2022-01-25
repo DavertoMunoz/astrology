@@ -37,6 +37,56 @@ verifyYesNoTarotLandingPagePickCard() {
 
 
 }   
+verifyRecommendedReports() {
+    cy.get(shared_locators.firstSliderReportImg).should('be.visible');
+    cy.get(shared_locators.firstSliderReportTitle).should('contain', 'Yes/No Tarot');
+    cy.get(shared_locators.secondSliderReportImg).should('be.visible');
+    cy.get(shared_locators.secondSliderReportTitle).should('contain', 'Make A Wish Tarot');
+    cy.get(shared_locators.thirdSliderReportImg).should('be.visible');
+    cy.get(shared_locators.thirdsSliderReportTitle).should('contain', 'Soulmate Tarot');
+
+    cy.get(shared_locators.recommendedNextArrow).click();
+
+    cy.get(shared_locators.fourthSliderReportImg).should('be.visible');
+    cy.get(shared_locators.fourthSliderReportTitle).should('contain', 'Love Tarot Reading');
+    cy.get(shared_locators.fifthSliderReportImg).should('be.visible');
+    cy.get(shared_locators.fifthSliderReportTitle).should('contain', 'Tarot of Angels');
+    cy.get(shared_locators.sixthSliderReportImg).should('be.visible');
+    cy.get(shared_locators.sixthSliderReportTitle).should('contain', 'Chakra Tarot Reading');
+
+    cy.get(shared_locators.recommendedNextArrow).click();
+
+    cy.get(shared_locators.seventhSliderReportImg).should('be.visible');
+    cy.get(shared_locators.seventhSliderReportTitle).should('contain', '2022 Tarot Reading');
+    cy.get(shared_locators.eigthSliderReportImg).should('be.visible');
+    cy.get(shared_locators.eightSliderReportTitle).should('contain', '2022 Love Tarot Reading');
+
+}
+
+verifyPopularWidgets() {
+        cy.get(shared_locators.mostPopYesNoTarotTitle).should('have.attr', 'href').and('include', 'tarot/yes-no.html');
+        cy.get(shared_locators.mostPopYesNoCardNum1).should('be.visible');
+        cy.get(shared_locators.mostPopYesNoCardNum2).should('be.visible');
+        cy.get(shared_locators.mostPopYesNoCardNum3).should('be.visible');
+        cy.get(shared_locators.mostPopYesNoCardNum4).should('be.visible');
+        cy.get(shared_locators.mostPopYesNoCardNum5).should('be.visible');
+    
+        cy.get(shared_locators.mostPopfreeBCTitle).should('be.visible');
+    
+        cy.get(shared_locators.mostPopKeenWidget).should('be.visible');
+        cy.get(shared_locators.keenMapMarker).should('be.visible');
+        cy.get(shared_locators.keenTalkPsychicBtn).should('have.attr', 'href').and('include', '/psychic-readings/195?tid=7YASEGG0');
+}
+
+adsVisibility() {
+
+    cy.get(shared_locators.adTopNavBar).should('be.visible');
+    cy.get(shared_locators.adBottomBanner).should('be.visible');
+    cy.get(shared_locators.adBannerBelowReports).should('be.visible');
+    cy.get(shared_locators.adStickyRightRail).should('be.visible');
+
+}
+
 
 }
 

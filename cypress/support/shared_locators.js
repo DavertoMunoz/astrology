@@ -136,6 +136,17 @@ export default {
     seventhSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(7)',
     eigthSliderReportImg: '.recommended-reports-carousel > div > div > div > div > div:nth-child(8)',
 
+    // Use these locators to confirm the card titles, depending of the page they can change
+
+    firstSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(1) .card__title',
+    secondSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(2) .card__title',
+    thirdsSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(3) .card__title',
+    fourthSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(4) .card__title',
+    fifthSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(5) .card__title',
+    sixthSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(6) .card__title',
+    seventhSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(7) .card__title',
+    eightSliderReportTitle: '.mt-1 .flickity-slider > div:nth-of-type(8) .card__title',
+
     // Complete card
     firstSliderCard: ".mt-1 div:nth-of-type(1) > .card",
     secondSliderCard: ".mt-1 div:nth-of-type(2) > .card",
@@ -176,8 +187,8 @@ export default {
     mostPopfreeBCTitle: "#title_BC",
 
 
-    mostPopKeenWidget: "#module-content-parent.module-content > .tag",
-    keenMapMarker: "[alt='map marker']",
+    mostPopKeenWidget: ".most-popular-on-acom-carousel div:nth-of-type(3) .tag",
+    keenMapMarker: "icon-psychic-hub",
     keenTalkPsychicBtn: ".module-keen-talk-with-psychic > .btn",
 
     loveCompWidgetTitle: "#title",
@@ -191,4 +202,14 @@ export default {
     // Ad banner bottom
     adBottomBanner: "#d_banner_t_banner_m_none_1",
     postQuestionBtn: "[name='genie_module'] > .btn",
+
+    // Ad banner top
+    adTopNavBar: "#d_banner_t_banner_m_tinybanner_1",
+
+    // Ad sticky right rail
+    adStickyRightRail: ".sticky",
+
+    // Small banner below recommended reports
+    adBannerBelowReports: "#skm-boomerang-el-2-1 > div",
+
 }
