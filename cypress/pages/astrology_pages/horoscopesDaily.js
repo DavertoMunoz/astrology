@@ -4,7 +4,7 @@ class HoroscopesDailyPage {
 
 
 visitHoroscopesDaily() {
-cy.visit('https://www.astrology.com/horoscope/daily.html');
+cy.visit(Cypress.env('dailyHoroHomepageProd'));
     
 }
 

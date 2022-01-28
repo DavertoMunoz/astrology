@@ -10,10 +10,14 @@ class YesNoTarotHomePage {
 visitYesNoTarotHomepage() {
     
     cy.visit(Cypress.env('yesNoTarotHomePageProd'));
+    cy.request(Cypress.env("yesNoTarotHomePageProd")).then((response) => {
+        expect(response.status).to.eq(200);
+        })
         
 }
 
 verifyYesNoTarotLandingPagePickCard() {
+    
     cy.get(shared_locators.pageTitle).should('contain', 'Yes or No Tarot Reading');
     cy.get(shared_locators.pageSubtitle).should('contain', 'Need an answer and advice on something ASAP? This popular reading gives you a simple yes or no and straightforward advice. Focus on your question and select your card now!');
     cy.get(tarotInnerPage_Locators.deckCardNumber1).click({force: true});

@@ -6,11 +6,13 @@ it('Test new Free Birth Chart page', function() {
 
 
 
-    cy.visit('https://www.astrology.com/birth-chart/');
+    cy.visit('https://shop-stage.astrology.com/birth-chart/');
     cy.get('.alpha').contains('Birth Chart Calculator');
-    cy.get('.trim-content > :nth-child(2)').contains('What Does Your Birth Chart Tell You?');
+    cy.get('.trim-content > :nth-child(3)').contains('What Does Your Birth Chart Tell You?');
     // image loading
-    cy.get('.form__media > img').should('be.visible');
+    cy.get("[alt='sample birth chart']").should('be.visible');
+    // Sub header
+    //cy.get('.trim-content > h3').should('contains', 'Your birth chart, also known as an astrology or natal chart');
     cy.get('#TermOfServicesCheckBox').click();
     cy.get('#first-name').type('Wayne Godot');
     cy.get('#gender-selector').select('Male');

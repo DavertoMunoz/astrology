@@ -1,5 +1,9 @@
 {
     "env": {
+
+      "stageBaseURL": "https://stage.astrology.com/",
+      "prodBaseURL": "https://www.astrology.com/",
+
       "homePageProd": "https://www.astrology.com/us/home.aspx",
       "dailyHoroHomepageProd": "https://www.astrology.com/horoscope/daily.html",
       "weeklyHomepageProd": "https://www.astrology.com/us/horoscope/index-weekly.aspx",
@@ -87,7 +91,7 @@
 
     "watchForFIleChanges": false
     },
-    
+    "baseUrl": "https://stage.astrology.com/",
     "projectId": "vubwqd",
     "defaultCommandTimeout": 80000,
     "pageLoadTimeout": 180000,
