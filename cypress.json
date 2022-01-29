@@ -2,8 +2,9 @@
     "env": {
 
       "stageBaseURL": "https://stage.astrology.com/",
-      "prodBaseURL": "https://www.astrology.com/",
-
+      "prodBaseURL": "https://www.astrology.com",
+      
+      "horoscopePage": "https://www.astrology.com/horoscope",
       "homePageProd": "https://www.astrology.com/us/home.aspx",
       "dailyHoroHomepageProd": "https://www.astrology.com/horoscope/daily.html",
       "weeklyHomepageProd": "https://www.astrology.com/us/horoscope/index-weekly.aspx",
@@ -17,6 +18,7 @@
       "shopHomepageProd": "https://shop.astrology.com/",
       "zodiacSignsHomepageProd": "https://www.astrology.com/zodiac-signs",
       "yesNoTarotHomePageProd": "https://www.astrology.com/tarot/yes-no.html",
+      "dailyAriesProd": "https://www.astrology.com/horoscope/daily/aries.html",
 
       "homePageSTG": "https://stage.astrology.com/us/home.aspx",
       "dailyHoroHomepageSTG": "https://stage.astrology.com/horoscope/daily.html",
@@ -91,7 +93,7 @@
 
     "watchForFIleChanges": false
     },
-    "baseUrl": "https://stage.astrology.com/",
+    "baseUrl": "https://www.astrology.com/",
     "projectId": "vubwqd",
     "defaultCommandTimeout": 80000,
     "pageLoadTimeout": 180000,
