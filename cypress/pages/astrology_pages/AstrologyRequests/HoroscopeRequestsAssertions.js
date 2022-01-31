@@ -15,6 +15,9 @@ assertHoroscopePagesReq() {
     cy.request('/horoscope/daily.html').then((response) => {
         expect(response.status).to.eq(200);
     })
+
+    // ARIES
+
     cy.request('/horoscope/daily/aries.html').then((response) => {
         expect(response.status).to.eq(200);
     })
@@ -45,7 +48,22 @@ assertHoroscopePagesReq() {
     cy.request('/horoscope/daily/tomorrow/aries.html').then((response) => {
         expect(response.status).to.eq(200);
     })
-    
+
+    cy.request('/horoscope/daily-love/aries.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/aries.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/aries.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/aries.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
     // TAURUS
 
     cy.request('/horoscope/daily/taurus.html').then((response) => {

@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-31T16:25:35.984Z",
+    "end": "2022-01-31T16:27:02.258Z",
+    "duration": 86274,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9b1fb372-f801-4bff-9066-f407ad2dbf07",
+      "title": "",
+      "fullFile": "cypress/integration/TCA04_LearnPageNavigation.spec.js",
+      "file": "cypress/integration/TCA04_LearnPageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1ed2db32-ee5a-4cdd-9fda-09e00f20a265",
+          "title": "Confirm Learn Page loading styles",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm widgets content",
+              "fullTitle": "Confirm Learn Page loading styles Confirm widgets content",
+              "timedOut": null,
+              "duration": 6931,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "learnhomepage.learnWidgetsVerification();",
+              "err": {},
+              "uuid": "f9579e27-58de-4e99-9f07-04e259e95e21",
+              "parentUUID": "1ed2db32-ee5a-4cdd-9fda-09e00f20a265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Learn carousel functionality",
+              "fullTitle": "Confirm Learn Page loading styles Learn carousel functionality",
+              "timedOut": null,
+              "duration": 53972,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "learnhomepage.carouselWidget();",
+              "err": {},
+              "uuid": "f3c85ff9-4d0a-4222-87e6-2d69c2483647",
+              "parentUUID": "1ed2db32-ee5a-4cdd-9fda-09e00f20a265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Learn More section verification",
+              "fullTitle": "Confirm Learn Page loading styles Learn More section verification",
+              "timedOut": null,
+              "duration": 16544,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "learnhomepage.learnSectionVerification();",
+              "err": {},
+              "uuid": "0c6854be-8561-4cae-934c-875f6f53303a",
+              "parentUUID": "1ed2db32-ee5a-4cdd-9fda-09e00f20a265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Article Section Verification",
+              "fullTitle": "Confirm Learn Page loading styles Article Section Verification",
+              "timedOut": null,
+              "duration": 2188,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "learnhomepage.articlesSectionVerification();",
+              "err": {},
+              "uuid": "9fb9daa6-3104-443d-8209-0d46dbb51b40",
+              "parentUUID": "1ed2db32-ee5a-4cdd-9fda-09e00f20a265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Store section verification",
+              "fullTitle": "Confirm Learn Page loading styles Store section verification",
+              "timedOut": null,
+              "duration": 6216,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "learnhomepage.storeSectionVerification();",
+              "err": {},
+              "uuid": "1c57d0c4-0c2d-48a8-819a-9ad2b6a6b399",
+              "parentUUID": "1ed2db32-ee5a-4cdd-9fda-09e00f20a265",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f9579e27-58de-4e99-9f07-04e259e95e21",
+            "f3c85ff9-4d0a-4222-87e6-2d69c2483647",
+            "0c6854be-8561-4cae-934c-875f6f53303a",
+            "9fb9daa6-3104-443d-8209-0d46dbb51b40",
+            "1c57d0c4-0c2d-48a8-819a-9ad2b6a6b399"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 85851,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

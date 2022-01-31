@@ -54,7 +54,7 @@ verifyMainCardContainer() {
     cy.get('.page__title').should('contain.text', 'Yes or No Tarot Reading');
     cy.go('back');
 
-    cy.get(tarotPage_locators.lovePotentialCard).click();
+    cy.get(tarotPage_locators.lovePotentialCard).click({force: true});
     cy.get('.page__title').should('contain.text', 'Love Potential Tarot Reading');
     cy.go('back');
 
@@ -66,7 +66,7 @@ verifyMainCardContainer() {
     cy.get('.page__title').should('contain.text', 'Daily Flirt Tarot Reading');
     cy.go('back');
 
-    cy.get(tarotPage_locators.yinYangCard).click();
+    cy.get(tarotPage_locators.yinYangCard).click({force: true});
     cy.get('.page__title').should('contain.text', 'Yin Yang Tarot Reading');
     cy.go('back');
 
