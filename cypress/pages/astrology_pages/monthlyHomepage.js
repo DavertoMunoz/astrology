@@ -32,7 +32,7 @@ confirmTheSkyThisMonth() {
     cy.get(shared_locators.theSkyTitle).should('contain.text', 'Month');
     cy.get(shared_locators.firstContentBody).should('be.visible');
     cy.contains('Continue Reading').click();
-    cy.url().should('include', '/article/november');
+    cy.url().should('include', '/article/january');
     cy.get('h1').should('be.visible');
     cy.get('.byline').should('be.visible'); // Author
     cy.get('.meta__date').should('be.visible'); // Date

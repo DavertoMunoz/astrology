@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-31T16:53:03.833Z",
+    "end": "2022-01-31T16:55:04.885Z",
+    "duration": 121052,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0cb88faa-8403-40ac-95f9-d0d190963762",
+      "title": "",
+      "fullFile": "cypress/integration/TCA13_YesNoTarotNavigation.spec.js",
+      "file": "cypress/integration/TCA13_YesNoTarotNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "48e76443-a737-45ff-9436-65bda206ce86",
+          "title": "Yes No Tarot Elements and Card Selection",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Assert elements and Card Selection",
+              "fullTitle": "Yes No Tarot Elements and Card Selection Assert elements and Card Selection",
+              "timedOut": null,
+              "duration": 29814,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "yesNoTarotHomepage.verifyYesNoTarotLandingPagePickCard();",
+              "err": {},
+              "uuid": "a9ce7f2d-7642-4647-8fc9-529593a17295",
+              "parentUUID": "48e76443-a737-45ff-9436-65bda206ce86",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assert recommended reports on Yes No tarot page",
+              "fullTitle": "Yes No Tarot Elements and Card Selection Assert recommended reports on Yes No tarot page",
+              "timedOut": null,
+              "duration": 6577,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "yesNoTarotHomepage.verifyRecommendedReports();",
+              "err": {},
+              "uuid": "34b60c2d-cb46-42d4-aaf5-63c8ac3d14cc",
+              "parentUUID": "48e76443-a737-45ff-9436-65bda206ce86",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Popular Widgets",
+              "fullTitle": "Yes No Tarot Elements and Card Selection Verify Popular Widgets",
+              "timedOut": null,
+              "duration": 83845,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA13_YesNoTarotNavigation.spec.js/Yes No Tarot Elements and Card Selection -- Verify Popular Widgets (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "yesNoTarotHomepage.verifyPopularWidgets();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `icon-psychic-hub`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `icon-psychic-hub`, but never found it.\n    at YesNoTarotHomePage.verifyPopularWidgets (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA13_YesNoTarotNavigation.spec.js:239:52)\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA13_YesNoTarotNavigation.spec.js:139:24)",
+                "diff": null
+              },
+              "uuid": "f3115f21-dd20-4c06-a51b-2982869dfc63",
+              "parentUUID": "48e76443-a737-45ff-9436-65bda206ce86",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a9ce7f2d-7642-4647-8fc9-529593a17295",
+            "34b60c2d-cb46-42d4-aaf5-63c8ac3d14cc"
+          ],
+          "failures": [
+            "f3115f21-dd20-4c06-a51b-2982869dfc63"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 120236,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

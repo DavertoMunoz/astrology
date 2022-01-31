@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-31T16:32:40.575Z",
+    "end": "2022-01-31T16:34:05.503Z",
+    "duration": 84928,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "87d831ef-edd2-4eae-a31b-1f67382a327b",
+      "title": "",
+      "fullFile": "cypress/integration/TCA07_ShopPageNavigation.spec.js",
+      "file": "cypress/integration/TCA07_ShopPageNavigation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2158e8e1-947c-40c8-9a5d-46e7a5e3429a",
+          "title": "Confirm Shop Page Navigation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm Products Prices in Shop Main page",
+              "fullTitle": "Confirm Shop Page Navigation Confirm Products Prices in Shop Main page",
+              "timedOut": null,
+              "duration": 84834,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/TCA07_ShopPageNavigation.spec.js/Confirm Shop Page Navigation -- Confirm Products Prices in Shop Main page (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "shopPage.productsPricesVerification();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.post-195537 bdi`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 80000ms: Expected to find element: `.post-195537 bdi`, but never found it.\n    at Context.eval (https://www.astrology.com/__cypress/tests?p=cypress/integration/TCA07_ShopPageNavigation.spec.js:196:64)",
+                "diff": null
+              },
+              "uuid": "0200a2c3-6845-4dd5-be74-d1b6cbcff987",
+              "parentUUID": "2158e8e1-947c-40c8-9a5d-46e7a5e3429a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0200a2c3-6845-4dd5-be74-d1b6cbcff987"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 84834,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

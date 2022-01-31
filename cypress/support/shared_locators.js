@@ -188,7 +188,7 @@ export default {
 
 
     mostPopKeenWidget: ".most-popular-on-acom-carousel div:nth-of-type(3) .tag",
-    keenMapMarker: "icon-psychic-hub",
+    keenMapMarker: ".icon-psychic-hub",
     keenTalkPsychicBtn: ".module-keen-talk-with-psychic > .btn",
 
     loveCompWidgetTitle: "#title",

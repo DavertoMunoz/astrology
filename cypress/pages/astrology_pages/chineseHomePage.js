@@ -85,12 +85,12 @@ verifyCarouselcontents(){
 verifyTextContent() {
 
     cy.fixture('chineseText.json').then(json => {
-        cy.get('.grid__main > :nth-child(4)').should('have.text', json.chineseHomeFirstParagraph);
-        cy.get('.grid__main > :nth-child(6)').should('have.text', json.chineseHomeSecondParagraph);
-        cy.get('.grid__main > :nth-child(8)').should('have.text', json.chineseHomeThirdParagraph);
-        cy.get('.grid__main > :nth-child(10)').should('have.text', json.chineseHomeFourthParagraph);
-        cy.get('.grid__main > :nth-child(12)').should('have.text', json.chineseHomeFifthParagraph);
-        cy.get('.grid__main > :nth-child(14)').should('have.text', json.chineseHomeSixthParagraph);
+        cy.get('p:nth-of-type(2)').should('have.text', json.chineseHomeFirstParagraph);
+        cy.get('p:nth-of-type(4)').should('have.text', json.chineseHomeSecondParagraph);
+        cy.get('p:nth-of-type(6)').should('have.text', json.chineseHomeThirdParagraph);
+        cy.get('p:nth-of-type(8)').should('have.text', json.chineseHomeFourthParagraph);
+        cy.get('p:nth-of-type(10)').should('have.text', json.chineseHomeFifthParagraph);
+        cy.get('p:nth-of-type(12)').should('have.text', json.chineseHomeSixthParagraph);
     })
 }
 
@@ -133,7 +133,7 @@ recommendedReportChineseIndex() {
 
     cy.get(shared_locators.fifthSliderReportImg).should('be.visible');
     cy.get(shared_locators.fifthSliderLinkTitle).click();
-    cy.url().should('contain', '/product/2022-vedic-horoscope/?utm_source');
+    cy.url().should('contain', '/product/annual-vedic-horoscope/?utm_source');
     cy.fixture('reportsNamesPrices.json').then(json => {
         cy.get(shared_locators.productTitle).should('have.text', json.yearVedicHoroscope);
     })
@@ -154,9 +154,11 @@ recommendedReportChineseIndex() {
 
 ChineseMoreHoroscopesLinkList() {
     cy.get(shared_locators.adCardJoinplusSidebar).should('be.visible');
+
+    cy.scrollTo(0, 1000); // We need to scroll to load the ad 
     cy.get(shared_locators.adVideoSidebar).should('be.visible');
 
-    cy.scrollTo(0, 1500)
+    cy.scrollTo(0, 1500);
 
     // List of links for mohtly horoscopes visibility (not functional)
     cy.get(shared_locators.loveHeaderLinkList).should('be.visible');
