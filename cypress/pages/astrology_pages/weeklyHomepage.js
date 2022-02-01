@@ -42,7 +42,11 @@ confirmTheSkyThisWeek() {
 }
 
 verifyCarouselLinksList() {
+    
     cy.get(shared_locators.adCardJoinplusSidebar).should('be.visible');
+    
+    cy.scrollTo(0, 1000); // Scroll to load the ad
+
     cy.get(shared_locators.adVideoSidebar).should('be.visible');
     cy.get(shared_locators.cardDaily).should('be.visible');
     cy.get(shared_locators.cardMonthly).should('be.visible');

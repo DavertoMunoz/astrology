@@ -170,7 +170,7 @@ cy.get(homepage_locators.homeNumerologyImage).should('be.visible')
 // Links and page confirmation
 // Shop Monthly Page Description
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get(homepage_locators.monthlyDescription).should('contain.text', "As we enter January, we are in the midst of Venus’ retrograde cycle. Love goddess is having us review our most important connections so we can move forward with more authentic bonds.");
+cy.get(homepage_locators.monthlyDescription).should('contain.text', "Welcome to one of the most positive months of 2022! As we enter February, Venus is finally direct and Mercury follows shortly after. This leaves no retrograde planets in the sky! From February 3 on, there’s only forward movement.");
 cy.go('back')
 
 

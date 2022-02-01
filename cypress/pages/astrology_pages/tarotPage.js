@@ -58,11 +58,11 @@ verifyMainCardContainer() {
     cy.get('.page__title').should('contain.text', 'Love Potential Tarot Reading');
     cy.go('back');
 
-    cy.get(tarotPage_locators.breakUptarotCard).click();
+    cy.get(tarotPage_locators.breakUptarotCard).click({force: true});
     cy.get('.page__title').should('contain.text', 'Breakup Tarot Reading');
     cy.go('back');
 
-    cy.get(tarotPage_locators.dailyFlirtCard).click();
+    cy.get(tarotPage_locators.dailyFlirtCard).click({force: true});
     cy.get('.page__title').should('contain.text', 'Daily Flirt Tarot Reading');
     cy.go('back');
 

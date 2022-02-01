@@ -97,6 +97,22 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
 
+    cy.request('/horoscope/daily-love/taurus.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/taurus.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/taurus.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/taurus.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
     // GEMINI
 
     cy.request('/horoscope/daily/gemini.html').then((response) => {
@@ -130,6 +146,21 @@ assertHoroscopePagesReq() {
     cy.request('/horoscope/daily/tomorrow/gemini.html').then((response) => {
         expect(response.status).to.eq(200);
     })
+    cy.request('/horoscope/daily-love/gemini.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/gemini.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/gemini.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/gemini.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
 
 
     // CANCER 
@@ -161,6 +192,21 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
     cy.request('/horoscope/daily/tomorrow/cancer.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+    cy.request('/horoscope/daily-love/cancer.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/cancer.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/cancer.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/cancer.html').then((response) => {
         expect(response.status).to.eq(200);
     })
 
@@ -198,6 +244,21 @@ assertHoroscopePagesReq() {
     cy.request('/horoscope/daily/tomorrow/leo.html').then((response) => {
         expect(response.status).to.eq(200);
     })
+    cy.request('/horoscope/daily-love/leo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/leo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/leo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/leo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
 
 
     // VIRGO
@@ -232,6 +293,21 @@ assertHoroscopePagesReq() {
     cy.request('/horoscope/daily/tomorrow/virgo.html').then((response) => {
         expect(response.status).to.eq(200);
     })
+    cy.request('/horoscope/daily-love/virgo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/virgo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/virgo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/virgo.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
 
     // LIBRA
     cy.request('/horoscope/daily/libra.html').then((response) => {
@@ -263,6 +339,36 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
     cy.request('/horoscope/daily/tomorrow/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+    cy.request('/horoscope/daily-love/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+    cy.request('/horoscope/daily-love/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/libra.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/libra.html').then((response) => {
         expect(response.status).to.eq(200);
     })
 
@@ -299,6 +405,23 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
 
+    cy.request('/horoscope/daily-love/scorpio.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/scorpio.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/scorpio.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/scorpio.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+
     // SAGITTARIUS
     cy.request('/horoscope/daily/sagittarius.html').then((response) => {
         expect(response.status).to.eq(200);
@@ -329,6 +452,21 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
     cy.request('/horoscope/daily/tomorrow/sagittarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+    cy.request('/horoscope/daily-love/sagittarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/sagittarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/sagittarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/sagittarius.html').then((response) => {
         expect(response.status).to.eq(200);
     })
 
@@ -365,6 +503,22 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
 
+    cy.request('/horoscope/daily-love/capricorn.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/capricorn.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/capricorn.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/capricorn.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
     // AQUARIUS
     cy.request('/horoscope/daily/aquarius.html').then((response) => {
         expect(response.status).to.eq(200);
@@ -395,6 +549,21 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
     cy.request('/horoscope/daily/tomorrow/aquarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+    cy.request('/horoscope/daily-love/aquarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/aquarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/aquarius.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/aquarius.html').then((response) => {
         expect(response.status).to.eq(200);
     })
 
@@ -428,6 +597,21 @@ assertHoroscopePagesReq() {
         expect(response.status).to.eq(200);
     })
     cy.request('/horoscope/daily/tomorrow/pisces.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+    cy.request('/horoscope/daily-love/pisces.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-work/pisces.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-dating/pisces.html').then((response) => {
+        expect(response.status).to.eq(200);
+    })
+
+    cy.request('/horoscope/daily-bonus/pisces.html').then((response) => {
         expect(response.status).to.eq(200);
     })
     
