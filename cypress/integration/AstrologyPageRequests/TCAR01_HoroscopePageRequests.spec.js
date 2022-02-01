@@ -9,4 +9,5 @@ describe('Astrology page links requests', function() {
 it('Horoscope pages requests', function() {
     astrologyHoroscopePages.assertHoroscopePagesReq();
 })
+
 })
