@@ -50,7 +50,7 @@ yesNoWidgetCard: '.card-3',
 // Shop section locators (Images and descriptions)
 
 // Locators
-homePremiumMonthlyImage: "[alt='Premium January Horoscope']",
+homePremiumMonthlyImage: "[alt='Premium February Horoscope']",
 homeBcImage: "[alt='birth horoscope + natal chart']",
 homeLoveCompImage: "[alt='Love Compatibility Report']",
 homeYearImage: "[alt='2021 Premium Horoscope']",
