@@ -28,6 +28,7 @@ it('Test new Free Birth Chart page', function() {
     cy.get('.form-skin > [type="submit"]').click();
     cy.wait(300);
     cy.url().should('include', 'https://reports.astrology.com/v1/reports/');
-    //cy.get('[width="310"]').should('include', 'Dear Wayne Godot')
+    /// New assertion added here
+    cy.get("[src='https://reports.astrology.com/assets/images/report-StEdNa-header.jpg']").should('be.visible');
     
 })
