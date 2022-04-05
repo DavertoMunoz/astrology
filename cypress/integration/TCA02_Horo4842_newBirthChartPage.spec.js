@@ -6,7 +6,7 @@ it('Test new Free Birth Chart page', function() {
 
 
 
-    cy.visit('https://shop-stage.astrology.com/birth-chart/');
+    cy.visit('https://shop.astrology.com/birth-chart/');
     cy.get('.alpha').contains('Birth Chart Calculator');
     cy.get('.trim-content > :nth-child(3)').contains('What Does Your Birth Chart Tell You?');
     // image loading

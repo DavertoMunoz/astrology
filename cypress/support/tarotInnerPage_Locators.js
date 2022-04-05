@@ -19,7 +19,7 @@ export default {
     deckCardNumber12: '.deck > .card-12',
 
 
-    resultsTitleText: '.text-left', // Yes no tarot title at the left of the page
+    tarotResultsbreadCrumb: '.breadcrumb > li:nth-child(3)', // Yes no tarot title at the left of the page
 
     taroReadinResultCard: "[alt='Tarot Reading Result']",
     pickAnothercardBtn: '.result-content > .btn',

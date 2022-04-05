@@ -1,5 +1,5 @@
 {
-    "monthlyReportName": "September Horoscope",
+    "monthlyReportName": "Monthly Horoscope",
     "loveTarotBundle": "Love Tarot Bundle",
     "birthNatalChart": "Birth Horoscope (+ Natal Chart)",
     "loveCompatibility": "Love Compatibility Report",
@@ -25,9 +25,9 @@
     "yearNumerology": "2022 Numerology Forecast",
     "yearVedicHoroscope": "2022 Vedic Horoscope",
 
-    "monthlyReportPrice": "$14.95",
+    "monthlyReportPrice": "$14.99",
     "loveTarotBundlePrice": "$29.99",
-    "birthNatalChartPrice": "$24.95",
+    "birthNatalChartPrice": "$24.99",
     "loveCompatibilityPrice": "$16.95",
     "yesNoTarotPrice": "$8.95",
     "loveTarotReadingPrice": "$6.95",
@@ -44,11 +44,11 @@
     "monthPersonalTransitsPrice": "$19.95",
     "chakraTarotReadingPrice": "$14.95",
     "astrologyPlusSubPrice": "$29.97",
-    "yearPremiumHoroscopePrice": "$19.99",
+    "yearPremiumHoroscopePrice": "$19.95",
     "yearTarotReadingPrice": "$9.97",
     "yearChineseHoroscopePrice": "$10.97",
     "yearLoveTarotReadingPrice": "$9.97",
-    "yearNumerologyPrice": "$14.99",
+    "yearNumerologyPrice": "$19.95",
     "yearVedicHoroscopePrice": "$9.97"
 
 

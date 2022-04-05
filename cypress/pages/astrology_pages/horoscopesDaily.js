@@ -47,7 +47,6 @@ theSkyToday() {
     cy.get(carouselNextButton).click();
     cy.get(carouselDateIcon).should('be.visible'); 
 
-
 }
 }
 

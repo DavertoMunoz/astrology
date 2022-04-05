@@ -75,6 +75,8 @@ verifyCarouselcontents(){
 
     cy.get(shared_locators.cardYearly).should('be.visible');
     cy.get(shared_locators.cardLove).should('be.visible');
+
+    cy.get(shared_locators.MoreHorocarouselNextArrow).click();
     cy.get(shared_locators.cardWork).should('be.visible');
 
     cy.get(shared_locators.MoreHorocarouselNextArrow).click();
@@ -99,7 +101,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.firstSliderLinkTitle).click();
     cy.url().should('contain', '/product/astrology-plus/?utm_source');
     cy.fixture('reportsNamesPrices.json').then(json => {
-        cy.get(shared_locators.productTitle).should('have.text', json.astrologyPlusSub);
+        cy.get(shared_locators.aPlusMainTitle).should('have.text', json.astrologyPlusSub);
     })
     cy.go('back');
 
@@ -107,7 +109,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.secondSliderLinkTitle).click();
     cy.url().should('contain', '/product/career-report/?utm_source');
     cy.fixture('reportsNamesPrices.json').then(json => {
-        cy.get(shared_locators.productTitle).should('have.text', json.careerReport);
+        cy.get(shared_locators.mainProductTitle).should('have.text', json.careerReport);
     })
     cy.go('back');
 
@@ -115,7 +117,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.secondSliderLinkTitle).click();
     cy.url().should('contain', '/product/career-report/?utm_source');
     cy.fixture('reportsNamesPrices.json').then(json => {
-        cy.get(shared_locators.productTitle).should('have.text', json.careerReport);
+        cy.get(shared_locators.mainProductTitle).should('have.text', json.careerReport);
     })
     cy.go('back');
 
@@ -124,9 +126,15 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.fourthSliderReportImg).should('be.visible');
     cy.get(shared_locators.fourthSliderLinkTitle).click();
     cy.url().should('contain', '/product/yearly-chinese-horoscope/?utm_source');
+
+    
     cy.fixture('reportsNamesPrices.json').then(json => {
-        cy.get(shared_locators.productTitle).should('have.text', json.yearChineseHoroscope);
+        cy.get(shared_locators.mainProductTitle).should('have.text', json.yearChineseHoroscope);
     })
+    // Add on removed from this product
+    // cy.fixture('reportsNamesPrices.json').then(json => {
+    //     cy.get(shared_locators.itemAddonTitle).should('have.text', json.treeOfLifeTarot);
+    // })
     cy.go('back');
 
     cy.get(chinesePage_Locators.reportsCarouselNextArrow).click()
@@ -135,7 +143,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.fifthSliderLinkTitle).click();
     cy.url().should('contain', '/product/annual-vedic-horoscope/?utm_source');
     cy.fixture('reportsNamesPrices.json').then(json => {
-        cy.get(shared_locators.productTitle).should('have.text', json.yearVedicHoroscope);
+        cy.get(shared_locators.mainProductTitle).should('have.text', json.yearVedicHoroscope);
     })
     cy.go('back');
 
@@ -145,7 +153,7 @@ recommendedReportChineseIndex() {
     cy.get(shared_locators.sixthSliderLinkTitle).click();
     cy.url().should('contain', '/product/yearly-horoscope/');
     cy.fixture('reportsNamesPrices.json').then(json => {
-        cy.get(shared_locators.productTitle).should('have.text', json.yearPremiumHoroscope);
+        cy.get(shared_locators.mainProductTitle).should('have.text', json.yearPremiumHoroscope);
     })
 
     cy.go('back');
@@ -156,7 +164,7 @@ ChineseMoreHoroscopesLinkList() {
     cy.get(shared_locators.adCardJoinplusSidebar).should('be.visible');
 
     cy.scrollTo(0, 1000); // We need to scroll to load the ad 
-    cy.get(shared_locators.adVideoSidebar).should('be.visible');
+    cy.get(shared_locators.adVideoSidebar).scrollIntoView().should('be.visible');
 
     cy.scrollTo(0, 1500);
 
@@ -168,7 +176,8 @@ ChineseMoreHoroscopesLinkList() {
     cy.get(shared_locators.datingHeaderLinkList).should('be.visible');
     cy.get(shared_locators.datingLinkList).should('be.visible');
 
-    cy.get(shared_locators.adBottomBanner).should('be.visible');
+    // check ads with this!!!
+    cy.get(shared_locators.adBottomBanner).scrollIntoView().should('be.visible');
 }
 }
 

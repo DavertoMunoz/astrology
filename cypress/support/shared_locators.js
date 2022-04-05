@@ -4,7 +4,11 @@
 export default {
 
     // Shop - product
-    productTitle: '.product_title',
+    itemAddonTitle: '.item_title', // This is for the add on product
+    // productEntryTitle: '.entry_title', // This is for the main product title
+    aPlusMainTitle: '.product_title', // This is for the Astrology+ subscription title main page 
+    mainProductTitle: '.entry-title',
+    
 
     // Page titles and subtitle
     pageSubtitle: '.page__subtitle',

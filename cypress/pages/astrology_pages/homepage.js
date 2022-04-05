@@ -67,8 +67,8 @@ cy.get(homepage_locators.yearlyImage).should('be.visible');
 cy.get(homepage_locators.loveImage).should('be.visible')
 // Work
 cy.get(homepage_locators.workImage).should('be.visible')
-// Dating
-cy.get(homepage_locators.datingImage).should('be.visible')
+// Daily Image, replaced, before was dating
+cy.get(homepage_locators.dailyImage).should('be.visible')
 
 }
 
@@ -79,7 +79,7 @@ cy.get("[alt='Chinese Zodiac Horoscopes']").should('be.visible');
 cy.get("[alt='2022 Yearly Horoscopes']").should('be.visible');
 cy.get('.icon-widget-love').should('be.visible');
 cy.get('.icon-widget-work').should('be.visible');
-cy.get('.icon-widget-dating').should('be.visible');
+cy.get('.icon-widget-daily').should('be.visible');
 
 }
 
@@ -170,7 +170,7 @@ cy.get(homepage_locators.homeNumerologyImage).should('be.visible')
 // Links and page confirmation
 // Shop Monthly Page Description
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get(homepage_locators.monthlyDescription).should('contain.text', "Welcome to one of the most positive months of 2022! As we enter February, Venus is finally direct and Mercury follows shortly after. This leaves no retrograde planets in the sky! From February 3 on, there’s only forward movement.");
+cy.get(homepage_locators.monthlyDescription).should('contain.text', "We have arrived at one of the most important months of 2022. April brings the oh, so awaited triple meetup of Jupiter, Neptune, and Venus in Pisces, which is expected to bring more harmony and creativity our way. Our manifestation powers will be at an all-time high, making it crucial that we align with our deepest desires.");
 cy.go('back')
 
 
@@ -187,7 +187,7 @@ cy.go('back')
 
 // Shop Premium Horoscope
 cy.get("[alt='2021 Premium Horoscope']").click()
-cy.get(homepage_locators.premiumHoroDescriptionTitle).should('contain.text', '2022 is the year you’ve been waiting for!')
+cy.get(homepage_locators.premiumHoroDescriptionTitle).should('contain.text', 'NOW 20% OFF')
 cy.get(homepage_locators.premiumHoroDescriptionSecondP).should('contain.text', 'The tide is turning! If 2021 was the year of change, get ready to experience more of that in the year ahead. In 2022, we will experience more growth collectively, as well as at a personal level. This is the time to allow yourself to dream and make things happen!')
 cy.get(homepage_locators.premiumHoroDescriptionThirdP).should('contain.text', 'Your 2022 Premium Horoscope will help you uncover your gifts and talents so you can make the most in love, health, career, and finances.')
 

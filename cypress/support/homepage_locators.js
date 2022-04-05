@@ -31,6 +31,7 @@ yearlyImage: '.horoscope-cards > :nth-child(2) > .card > .card__media > .media-w
 loveImage: '.icon-widget-love',
 workImage: '.icon-widget-work',
 datingImage: '.icon-widget-dating',
+dailyImage: '.icon-widget-daily',
 
 // Learn section images
 learnZodiacCard: "[alt='zodiac sign']",
@@ -50,7 +51,7 @@ yesNoWidgetCard: '.card-3',
 // Shop section locators (Images and descriptions)
 
 // Locators
-homePremiumMonthlyImage: "[alt='Premium February Horoscope']",
+homePremiumMonthlyImage: "[alt='Premium April Horoscope']",
 homeBcImage: "[alt='birth horoscope + natal chart']",
 homeLoveCompImage: "[alt='Love Compatibility Report']",
 homeYearImage: "[alt='2021 Premium Horoscope']",

@@ -31,7 +31,7 @@ export default {
     homeAplusSubImg: "[src='https://shop.astrology.com/wp-content/uploads/sites/5/2020/09/acomstoregraphics-17-324x324.png']",
 
     // Product prices
-    homeMonthlyHoroPrice: ".post-219203 bdi", // 14.95
+    homeMonthlyHoroPrice: ".post-238535 .price > .woocommerce-Price-amount > bdi",  // ".post-189340 bdi", 14.95
     homebirthChartPrice: ".post-22 bdi", // 24.95
     homeLoveCompPrice: ".post-25 bdi", // 16.95
     homeYesNoTarotPrice: ".post-15645 bdi", //8.95
@@ -47,8 +47,8 @@ export default {
     homeCareerReportPrice: ".post-18030 bdi", // 19.95
     homeTransitsReportPrice: ".post-13882 bdi", // 19.95
     homeChakraTarotPrice: ".post-27744 bdi", // 14.95 
-    homeYearlyHoroPrice: ".post-2349 bdi", // 24.95
-    home2022NumerologyPrice: ".post-3450 bdi", // 19.95
+    homeYearlyHoroPrice: ".post-238586 .price > .woocommerce-Price-amount > bdi", // 19.95
+    home2022NumerologyPrice: ".post-238605 .price > .woocommerce-Price-amount > bdi", // 19.95
     home2022VedicPrice: ".post-2786 bdi", // 19.95
     home2022ChinesePrice: ".post-3098 bdi", // 21.95
     home2022TarotPrice: ".post-4802 bdi", // 19.95
