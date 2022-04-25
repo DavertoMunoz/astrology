@@ -34,7 +34,7 @@
       "shopHomepageSTG": "https://shop-stage.astrology.com/",
       "zodiacSignsHomepageSTG": "https://stage.astrology.com/zodiac-signs",
       
-      "monthlyReportUrlProd": "https://shop.astrology.com/product/september-2021-horoscope/?utm_source=store&utm_medium=site&utm_campaign=astro-store",
+      "monthlyReportUrlProd": "https://shop-stage.astrology.com/product/monthly-horoscope",
       "loveTarotBundleUrlProd": "https://shop.astrology.com/product/love-tarot-bundle/?utm_source=store&utm_medium=site&utm_campaign=astro-store",
       "birthNatalChartUrlProd": "https://shop.astrology.com/product/birth-horoscope-natal-chart/?utm_source=store&utm_medium=site&utm_campaign=astro-store",
       "loveCompatibilityUrlProd": "https://shop.astrology.com/product/love-compatibility-report/?utm_source=store&utm_medium=site&utm_campaign=astro-store",

@@ -70,26 +70,29 @@ class SanityLinksPages {
     }
     
     verifyPopularWidgets() {
-            cy.get(shared_locators.mostPopYesNoTarotTitle).should('have.attr', 'href').and('include', 'tarot/yes-no.html');
-            cy.get(shared_locators.mostPopYesNoCardNum1).should('be.visible');
-            cy.get(shared_locators.mostPopYesNoCardNum2).should('be.visible');
-            cy.get(shared_locators.mostPopYesNoCardNum3).should('be.visible');
-            cy.get(shared_locators.mostPopYesNoCardNum4).should('be.visible');
-            cy.get(shared_locators.mostPopYesNoCardNum5).should('be.visible');
         
             cy.get(shared_locators.mostPopfreeBCTitle).should('be.visible');
         
             cy.get(shared_locators.mostPopKeenWidget).should('be.visible');
             cy.get(shared_locators.keenMapMarker).should('be.visible');
             cy.get(shared_locators.keenTalkPsychicBtn).should('have.attr', 'href').and('include', '/psychic-readings/195?tid=7YASEGG0');
+
+            cy.get(shared_locators.mostPopularNextArrow).click();
+
+            cy.get(shared_locators.mostPopYesNoTarotTitle).should('have.attr', 'href').and('include', 'tarot/yes-no.html');
+            cy.get(shared_locators.mostPopYesNoCardNum1).should('be.visible');
+            cy.get(shared_locators.mostPopYesNoCardNum2).should('be.visible');
+            cy.get(shared_locators.mostPopYesNoCardNum3).should('be.visible');
+            cy.get(shared_locators.mostPopYesNoCardNum4).should('be.visible');
+            
     }
     
     adsVisibility() {
     
-        cy.get(shared_locators.adTopNavBar).should('be.visible');
-        cy.get(shared_locators.adBottomBanner).should('be.visible');
-        cy.get(shared_locators.adBannerBelowReports).should('be.visible');
-        cy.get(shared_locators.adStickyRightRail).should('be.visible');
+        // cy.get(shared_locators.adTopNavBar).should('be.visible');
+        cy.get("#d_banner_t_banner_m_none_1").should('be.visible');
+        cy.get("div.sticky").should('be.visible');
+        cy.get("#skm-boomerang-el-3-1").should('be.visible');
     
     }
 

@@ -179,17 +179,16 @@ export default {
     // 
 
     mostPopYesNoTarotTitle: ".quartz",
+    mostPopBCWidget: "#birth-chart-widget",
+    mostPopCompWidget: "#compat-widget",
     mostPopYesNoCardNum1: ".card-1",
     mostPopYesNoCardNum2: ".card-2",
     mostPopYesNoCardNum3: ".card-3",
     mostPopYesNoCardNum4: ".card-4",
     mostPopYesNoCardNum5: ".card-5",
     mostPopYesNoCardNum6: ".card-6",
-    
-
 
     mostPopfreeBCTitle: "#title_BC",
-
 
     mostPopKeenWidget: ".most-popular-on-acom-carousel div:nth-of-type(3) .tag",
     keenMapMarker: ".icon-psychic-hub",

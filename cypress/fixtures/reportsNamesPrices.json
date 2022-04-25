@@ -30,14 +30,14 @@
     "birthNatalChartPrice": "$24.99",
     "loveCompatibilityPrice": "$16.95",
     "yesNoTarotPrice": "$8.95",
-    "loveTarotReadingPrice": "$6.95",
+    "loveTarotReadingPrice": "$14.99",
     "loveScorePrice": "$29.95",
     "soulMateTarotPrice": "$24.95",
     "makeWishTarotPrice": "$8.95",
     "karmaReportPrice": "$14.95",
     "karmeLoveTarotPrice": "$14.95",
     "natalMoonReportPrice": "$11.95",
-    "pastPresentFutureTarotPrice": "$9.95",
+    "pastPresentFutureTarotPrice": "$16.95",
     "treeOfLifeTarotPrice": "$24.95",
     "tarotOfAngelsPrice": "$11.95",
     "careerReportPrice": "$19.95",
@@ -46,10 +46,42 @@
     "astrologyPlusSubPrice": "$29.97",
     "yearPremiumHoroscopePrice": "$19.95",
     "yearTarotReadingPrice": "$9.97",
-    "yearChineseHoroscopePrice": "$10.97",
+    "yearChinesePriceOneTime": "$21.95",
+    "yearChinesePriceSub": "$16.95",
     "yearLoveTarotReadingPrice": "$9.97",
-    "yearNumerologyPrice": "$19.95",
-    "yearVedicHoroscopePrice": "$9.97"
+
+
+    "yearNumerologyPriceOneTime": "$19.95",
+    "yearNumerologyPriceSub": "$14.99",
+
+    "yearlyLoveTarotPriceOneTime": "$19.95", 
+    "yearlyLoveTarotPriceSub": "$14.99", 
+
+    "yearlyTarotPriceOneTime": "$19.95", 
+    "yearlyTarotPriceSub": "$14.95", 
+
+    "yearlyHoroPriceOneTime": "$24.99", 
+    "yearlyHoroPriceOneSub": "$19.99", 
+   
+    "yearVedicHoroscopeOneTime": "$19.99", 
+    "yearVedicHoroscopeSub": "$14.99",
+
+    "magicLoveTarotPrice": "$11.95",
+    "egyptianTarotPrice": "$14.99",
+
+    "monthlyHoroPriceOneTime": "$14.99",
+    "monthlyHoroPriceSub": "$11.99",
+
+    "careerTarotPrice": "$6.95",
+    "visionQuestTarot": "$11.95",
+    "celticCrossTarot":"16.95",
+
+    "yearlyAnnualBundle": "$45.00",
+    "twelveHouseTarotReading": "$16.95"
+
+
+
+    
 
 
 }

@@ -35,25 +35,62 @@ export default {
     homebirthChartPrice: ".post-22 bdi", // 24.95
     homeLoveCompPrice: ".post-25 bdi", // 16.95
     homeYesNoTarotPrice: ".post-15645 bdi", //8.95
-    homeLoveTarotPrice: ".post-5394 bdi", // 6.95
+    homeLoveTarotPrice: ".post-5394 bdi", // 14.99
     homeLoveScorePrice: ".post-17385 bdi", // 29.95
     homeSoulMatePrice: ".post-13011 bdi", //24.95
     homeMakeWishPrice: ".post-27741 bdi", // 8.95
     homeKarmaReportPrice: ".post-18444 bdi", // 14.95
     homeNatalMoonPrice: ".post-17382 bdi", // 11.95
-    homePastPresentPrice: ".post-27750 bdi", // 9.95
+    homePastPresentPrice: ".post-27750 bdi", // 16.95
     homeTreeLifePrice: ".post-17503 bdi", // 24.95
     homeTarotAngelsPrice: ".post-27745 bdi", // 11.95
     homeCareerReportPrice: ".post-18030 bdi", // 19.95
     homeTransitsReportPrice: ".post-13882 bdi", // 19.95
     homeChakraTarotPrice: ".post-27744 bdi", // 14.95 
     homeYearlyHoroPrice: ".post-238586 .price > .woocommerce-Price-amount > bdi", // 19.95
-    home2022NumerologyPrice: ".post-238605 .price > .woocommerce-Price-amount > bdi", // 19.95
-    home2022VedicPrice: ".post-2786 bdi", // 19.95
-    home2022ChinesePrice: ".post-3098 bdi", // 21.95
-    home2022TarotPrice: ".post-4802 bdi", // 19.95
-    home2022LoveTarotPrice: ".post-7638 bdi", // 19.95
+    home2022ChinesePriceOneTime: ".post-238598 .price > .woocommerce-Price-amount > bdi", // 21.95
+    home2022ChinesePriceSub: ".post-238598 .wcsatt-sub-options bdi", // 16.95
+
+    
     homeAplusSubPrice: ".post-96410 bdi", // 29.97
+
+    homeChakraTarotReading: ".post-27744 bdi", // 14.95
+    homeKarmeLoveReport: ".post-27747 bdi", // 14.95
+    homeLoveTarotBundle: ".post-159489 bdi", // 29.99
+    homeFindingLoveTarot: ".post-176587 bdi", // 6.99
+    homeYearlyVedicOneTime: ".post-238550 .price > .woocommerce-Price-amount > bdi", // 19.99
+    homeYearlyVedicSub: ".post-238550 .wcsatt-sub-options bdi", // 14.99
+
+    homeNumerologyPriceOneTime: ".post-238605 .price > .woocommerce-Price-amount > bdi", // 19.95
+    homeNumerologyPriceSub: ".post-238605 .wcsatt-sub-options bdi", // 14.99
+
+    homeYearlyLoveTarotPriceOneTime: ".post-238568 .price > .woocommerce-Price-amount > bdi", // 19.95
+    homeYearlyLoveTarotPriceSub: ".post-238568 .wcsatt-sub-options bdi", // 14.99
+    homeYearlyTarotPriceOneTime: ".post-238586 .price > .woocommerce-Price-amount > bdi", // 19.95
+    homeYearlyTarotPriceSub: ".post-238586 .wcsatt-sub-options bdi", // 14.95
+
+    homeYearlyHoroPriceOneTime: ".post-238577 .price > .woocommerce-Price-amount > bdi", // 24.99
+    homeYearlyHoroPriceOneSub: ".post-238577 .wcsatt-sub-options bdi", // 19.99
+   
+    homeMagicLoveTarot: ".post-205737 bdi", // 11.95
+    homeEgyptianTarot: ".post-205738 bdi", // 14.99
+
+    homeMonthlyHoroPriceOneTime: ".post-238535 .price > .woocommerce-Price-amount > bdi", // 14.99
+    homeMonthlyHoroPriceSub: ".post-238535 .wcsatt-sub-options bdi", // 11.99
+
+    homeCareerTarot: ".post-205741 bdi", // 6.95
+    homeVisionQuestTarot: ".post-229648 bdi", // 11.95
+    homeCelticCrossTarot: ".post-227805 bdi", // 16.95
+
+    homeYearlyAnnualBundle: ".post-238643 bdi", // 45.00
+    home12HouseTarotReading: ".post-227808 bdi", // 16.95
+
+
+
+    
+
+
+
 
 
 

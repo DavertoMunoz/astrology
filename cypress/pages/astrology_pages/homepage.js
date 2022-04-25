@@ -188,8 +188,8 @@ cy.go('back')
 // Shop Premium Horoscope
 cy.get("[alt='2021 Premium Horoscope']").click()
 cy.get(homepage_locators.premiumHoroDescriptionTitle).should('contain.text', 'NOW 20% OFF')
-cy.get(homepage_locators.premiumHoroDescriptionSecondP).should('contain.text', 'The tide is turning! If 2021 was the year of change, get ready to experience more of that in the year ahead. In 2022, we will experience more growth collectively, as well as at a personal level. This is the time to allow yourself to dream and make things happen!')
-cy.get(homepage_locators.premiumHoroDescriptionThirdP).should('contain.text', 'Your 2022 Premium Horoscope will help you uncover your gifts and talents so you can make the most in love, health, career, and finances.')
+cy.get(homepage_locators.premiumHoroDescriptionThirdP).should('contain.text', 'The tide is turning! If 2021 was the year of change, get ready to experience more of that in the year ahead. In 2022, we will experience more growth collectively, as well as at a personal level. This is the time to allow yourself to dream and make things happen!')
+// cy.get(homepage_locators.premiumHoroDescriptionThirdP).should('contain.text', 'Your 2022 Premium Horoscope will help you uncover your gifts and talents so you can make the most in love, health, career, and finances.')
 
 cy.go('back')
 

@@ -62,8 +62,41 @@ ImageProductsVerification() {
     cy.get(shopPage_locators.homeChakraTarotPrice).should('have.text', json.chakraTarotReadingPrice);
     cy.get(shopPage_locators.homeYearlyHoroPrice).should('have.text', json.yearPremiumHoroscopePrice);
 
-    cy.get(shopPage_locators.home2022NumerologyPrice).should('have.text', json.yearNumerologyPrice);
-    
+    cy.get(shopPage_locators.homeNumerologyPriceOneTime).should('have.text', json.yearNumerologyPriceOneTime);
+    cy.get(shopPage_locators.homeNumerologyPriceSub).should('have.text', json.yearNumerologyPriceSub);
+
+    cy.get(shopPage_locators.homeYearlyVedicOneTime).should('have.text', json.yearVedicHoroscopeOneTime);
+    cy.get(shopPage_locators.homeYearlyVedicSub).should('have.text', json.yearVedicHoroscopeSub);
+
+    cy.get(shopPage_locators.homeYearlyLoveTarotPriceOneTime).should('have.text', json.yearlyLoveTarotPriceOneTime);
+    cy.get(shopPage_locators.homeYearlyLoveTarotPriceSub).should('have.text', json.yearlyLoveTarotPriceSub);
+
+    cy.get(shopPage_locators.homeYearlyTarotPriceOneTime).should('have.text', json.yearlyTarotPriceOneTime);
+    cy.get(shopPage_locators.homeYearlyTarotPriceSub).should('have.text', json.yearlyTarotPriceSub);
+
+    cy.get(shopPage_locators.homeYearlyHoroPriceOneTime).should('have.text', json.yearlyHoroPriceOneTime);
+    cy.get(shopPage_locators.homeYearlyHoroPriceOneSub).should('have.text', json.yearlyHoroPriceOneSub);
+
+
+    cy.get(shopPage_locators.home2022ChinesePriceOneTime).should('have.text', json.yearChinesePriceOneTime);
+    cy.get(shopPage_locators.home2022ChinesePriceSub).should('have.text', json.yearChinesePriceSub);
+
+    cy.get(shopPage_locators.homeMagicLoveTarot).should('have.text', json.magicLoveTarotPrice);
+    cy.get(shopPage_locators.homeEgyptianTarot).should('have.text', json.egyptianTarotPrice);
+    cy.get(shopPage_locators.homeMonthlyHoroPriceOneTime).should('have.text', json.monthlyHoroPriceOneTime);
+    cy.get(shopPage_locators.homeMonthlyHoroPriceSub).should('have.text', json.monthlyHoroPriceSub);
+    cy.get(shopPage_locators.homeCareerTarot).should('have.text', json.careerTarotPrice);
+    cy.get(shopPage_locators.homeVisionQuestTarot).should('have.text', json.visionQuestTarot);
+    cy.get(shopPage_locators.homeYearlyAnnualBundle).should('have.text', json.yearlyAnnualBundle);
+    cy.get(shopPage_locators.home12HouseTarotReading).should('have.text', json.twelveHouseTarotReading);
+
+
+    // Start here
+
+
+
+
+
     // Yearly
     // cy.get(".post-3098 [aria-hidden='true'] bdi").then(hiddenPrice => {
     //     if (hiddenPrice.is(':visible')) {
