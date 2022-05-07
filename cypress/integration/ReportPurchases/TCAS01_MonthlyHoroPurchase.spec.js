@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import PremiumMonthlyPage from "../pages/astrology_pages/premiumMonthlyPage";
+import PremiumMonthlyPage from "../../pages/astrology_pages/premiumMonthlyPage";
 
 describe('Purchase report', function() {
     const premiumMonthlyPage = new PremiumMonthlyPage();
@@ -15,7 +15,7 @@ it('Confirm monthly title shop page', function() {
     premiumMonthlyPage.ProductTitleVerification();
 })
 
-it('Fill the form', function() {
-    premiumMonthlyPage.productFillForm();
+it('Purchase monthly report (one time)', function() {
+    premiumMonthlyPage.monthlyHoroscopePurchase();
 })
 })
