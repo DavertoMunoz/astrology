@@ -51,7 +51,7 @@ yesNoWidgetCard: '.card-3',
 // Shop section locators (Images and descriptions)
 
 // Locators
-homePremiumMonthlyImage: "[alt='Premium April Horoscope']",
+homePremiumMonthlyImage: "[alt='Premium May Horoscope']",
 homeBcImage: "[alt='birth horoscope + natal chart']",
 homeLoveCompImage: "[alt='Love Compatibility Report']",
 homeYearImage: "[alt='2021 Premium Horoscope']",
@@ -64,7 +64,7 @@ premiumHoroDescriptionTitle: ".woocommerce-product-details__short-description > 
 premiumHoroDescriptionSecondP: ".woocommerce-product-details__short-description > p:nth-of-type(2)",
 premiumHoroDescriptionThirdP: ".woocommerce-product-details__short-description > p:nth-of-type(3)",
 tarotReadDescription: ".woocommerce-product-details__short-description > p",
-numDescription: ".woocommerce-product-details__short-description > p:nth-of-type(1)",
+numDescription: ".woocommerce-product-details__short-description > p:nth-of-type(2)",
 }
 // }
 // }

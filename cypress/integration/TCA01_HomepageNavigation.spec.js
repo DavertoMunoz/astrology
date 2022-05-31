@@ -10,11 +10,15 @@ describe('astroHomepageNav', function() {
 //     homepage.visitHomepage()
 // })
 
-it('Confirm all sign icons are loading correctly', function()  {
-    homepage.visitHomepage()
-    homepage.signIconsConfirmation();
 
-})
+    // TEST SKIPPED BECAUSE THE HOMEPGAE REDESIGN
+// it('Confirm all sign icons are loading correctly', function()  {
+//     homepage.visitHomepage()
+//     homepage.signIconsConfirmation();
+
+// })
+    
+
     
 it('Confirm all images from Horoscope section are visible', () => {
     homepage.visitHomepage()

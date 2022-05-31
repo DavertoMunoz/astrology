@@ -37,22 +37,23 @@ cy.get(homepage_locators.compatibilitySub).contains("Test your compatibility and
 
 }
 
-signIconsConfirmation() { 
-// Icons assertions and locators from /support/homepage_locators.js
-cy.get(homepage_locators.ariesIcon).should('be.visible');
-cy.get(homepage_locators.taurusIcon).should('be.visible');
-cy.get(homepage_locators.geminiIcon).should('be.visible');
-cy.get(homepage_locators.cancerIcon).should('be.visible')
-cy.get(homepage_locators.leoIcon).should('be.visible')
-cy.get(homepage_locators.virgoIcon).should('be.visible')
-cy.get(homepage_locators.libraIcon).should('be.visible')
-cy.get(homepage_locators.scorpioIcon).should('be.visible')
-cy.get(homepage_locators.saggIcon).should('be.visible')
-cy.get(homepage_locators.capricornIcon).should('be.visible')
-cy.get(homepage_locators.aquariusIcon).should('be.visible')
-cy.get(homepage_locators.piscesIcon).should('be.visible')
+// signIconsConfirmation() { 
+//     // Homepage redesigned, sign icons removed from homepage
+// // Icons assertions and locators from /support/homepage_locators.js
+// cy.get(homepage_locators.ariesIcon).should('be.visible');
+// cy.get(homepage_locators.taurusIcon).should('be.visible');
+// cy.get(homepage_locators.geminiIcon).should('be.visible');
+// cy.get(homepage_locators.cancerIcon).should('be.visible')
+// cy.get(homepage_locators.leoIcon).should('be.visible')
+// cy.get(homepage_locators.virgoIcon).should('be.visible')
+// cy.get(homepage_locators.libraIcon).should('be.visible')
+// cy.get(homepage_locators.scorpioIcon).should('be.visible')
+// cy.get(homepage_locators.saggIcon).should('be.visible')
+// cy.get(homepage_locators.capricornIcon).should('be.visible')
+// cy.get(homepage_locators.aquariusIcon).should('be.visible')
+// cy.get(homepage_locators.piscesIcon).should('be.visible')
 
-}
+// }
 
 horoscopeSectionImages() {
 // Images assertions
@@ -170,7 +171,7 @@ cy.get(homepage_locators.homeNumerologyImage).should('be.visible')
 // Links and page confirmation
 // Shop Monthly Page Description
 cy.get(homepage_locators.homePremiumMonthlyImage).click()
-cy.get(homepage_locators.monthlyDescription).should('contain.text', "We have arrived at one of the most important months of 2022. April brings the oh, so awaited triple meetup of Jupiter, Neptune, and Venus in Pisces, which is expected to bring more harmony and creativity our way. Our manifestation powers will be at an all-time high, making it crucial that we align with our deepest desires.");
+cy.get(homepage_locators.monthlyDescription).should('contain.text', "The month of May promises to be one of the most transformative of 2022. Uranus, the planet of the unexpected, plays a significant role in this month’s astrology, fulfilling its cosmic job of taking us into the future.");
 cy.go('back')
 
 

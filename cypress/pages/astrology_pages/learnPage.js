@@ -158,7 +158,7 @@ cy.get(learnPage_locators.numerologyLinkCard).click()
 cy.get('h1').should('contain.text', 'Numerology Overview');
 cy.go('back');
 cy.get(learnPage_locators.psychicsLinkCard).click();
-cy.get('.page__title').should('contain.text', 'Online Psychic Readings');
+cy.get('.page__title').should('contain.text', 'Psychic Readings');
 cy.go('back');
 
 }
